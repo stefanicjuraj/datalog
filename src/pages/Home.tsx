@@ -18,7 +18,7 @@ function Home() {
                         <h1 className="sm:text-6xl text-5xl text-white font-bold">
                             -- -----
                         </h1>
-                        <p className="sm:text-1xl text-md mt-1 text-white">
+                        <p className="sm:text-1xl text-md mt-4 text-white">
                             /pronounciation/ •
                             <span className="bg-[#333] text-white text-md font-bold px-2.5 py-0.5 rounded">In development</span>
                         </p>
