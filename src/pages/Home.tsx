@@ -20,7 +20,7 @@ function Home() {
                         </h1>
                         <p className="sm:text-1xl text-md mt-4 text-white">
                             /pronounciation/ • {" "}
-                            <span className="bg-[#333] text-white text-md font-bold px-2.5 py-0.5 rounded">In development</span>
+                            <span className="bg-[#333] text-white text-md font-bold px-2.5 py-1 rounded">In development</span>
                         </p>
                         <p className="w-full sm:w-3/4 text-lg mt-4 text-white">
                             A comprehensive data list of IT (ICT) {" "}
