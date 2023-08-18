@@ -6,7 +6,7 @@ import company from '../assets/icons/company-light.svg';
 import certificate from '../assets/icons/certificate-light.svg';
 import analytics from '../assets/icons/analytics-light.svg';
 import arrow from '../assets/icons/arrow-light.svg';
-import arrowBig from '../assets/icons/arrow-big.svg';
+import arrowCorner from '../assets/icons/arrow-corner.svg';
 
 function Home() {
     return (
@@ -58,7 +58,7 @@ function Home() {
                                     View companies conducting business operations, providing services, or offering consultancy in Croatia.
                                 </p>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowBig} className="h-7 w-7" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -76,7 +76,7 @@ function Home() {
                                     Attend conferences and presentations with industry knowledge professionals and enthusiasts.
                                 </p>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowBig} className="h-7 w-7" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -91,7 +91,7 @@ function Home() {
                                     Start your career and enhance your professional knowledge by applying to offered internship programs.
                                 </p>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowBig} className="h-7 w-7" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -106,7 +106,7 @@ function Home() {
                                     Enrol into provided courses, lectures, and classes to learn more about IT and software development.
                                 </p>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowBig} className="h-7 w-7" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -121,7 +121,7 @@ function Home() {
                                     Search for the certifications to master and demonstrate your professional knowledge and skills.
                                 </p>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowBig} className="h-7 w-7" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -136,7 +136,7 @@ function Home() {
                                     Observe and gain insight into the industry trends, statistics, and data to amplify your decision-making.
                                 </p>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowBig} className="h-7 w-7" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
                             </div>
                         </Link>
