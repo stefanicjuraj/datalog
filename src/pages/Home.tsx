@@ -24,12 +24,12 @@ function Home() {
                         </p>
                         <p className="w-full sm:w-3/4 text-lg mt-4 text-white">
                             A comprehensive data list of IT (ICT) {" "}
-                            <span className="bg-[#333] px-1 py-0.5 rounded-lg">companies</span>, {" "}
-                            <span className="bg-[#333] px-1 py-0.5 rounded-lg">conferences</span>, {" "}
-                            <span className="bg-[#333] px-1 py-0.5 rounded-lg">internships</span>, {" "}
-                            <span className="bg-[#333] px-1 py-0.5 rounded-lg">education</span>, {" "}
-                            <span className="bg-[#333] px-1 py-0.5 rounded-lg">certificates</span>, {" "} and {" "}
-                            <span className="bg-[#333] px-1 py-0.5 rounded-lg">analytics</span>
+                            <span className="bg-[#333] px-1 py-0.3 rounded-lg">companies</span>, {" "}
+                            <span className="bg-[#333] px-1 py-0.3 rounded-lg">conferences</span>, {" "}
+                            <span className="bg-[#333] px-1 py-0.3 rounded-lg">internships</span>, {" "}
+                            <span className="bg-[#333] px-1 py-0.3 rounded-lg">education</span>, {" "}
+                            <span className="bg-[#333] px-1 py-0.3 rounded-lg">certificates</span>, {" "} and {" "}
+                            <span className="bg-[#333] px-1 py-0.3 rounded-lg">analytics</span>
                             {" "}available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                         </p>
                         {/* READ MORE */}
