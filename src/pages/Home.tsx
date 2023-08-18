@@ -5,12 +5,12 @@ import education from '../assets/icons/education-light.svg';
 import company from '../assets/icons/company-light.svg';
 import certificate from '../assets/icons/certificate-light.svg';
 import analytics from '../assets/icons/analytics-light.svg';
-import arrow from '../assets/icons/arrow-light.svg';
+import arrow from '../assets/icons/arrow-dark.svg';
 import arrowCorner from '../assets/icons/arrow-corner.svg';
 
 function Home() {
     return (
-        <div className="p-4 sm:ml-56 sm:mt-8 mt-0">
+        <div className="pl-4 pr-4 pt-16 sm:ml-56">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
                 <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-xl">
                     {/* header */}
@@ -32,7 +32,7 @@ function Home() {
                             {" "}available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                         </p>
                         {/* read more */}
-                        <a href="#" className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                        <a href="#" className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-gray-200 text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                             Read more
                             <img src={arrow} className="h-6 w-6 ml-2" />
                         </a>
@@ -42,10 +42,10 @@ function Home() {
                         </a>
                     </div>
                     {/* cards */}
-                    <div className="mt-16 mb-8 max-w-screen-xl space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
+                    <div className="mt-24 mb-8 max-w-screen-xl space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
                         {/* companies */}
                         <Link to="/companies">
-                            <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={company} className="h-6 w-6" />
                                 </div>
@@ -63,7 +63,7 @@ function Home() {
                         </Link>
                         {/* conferences */}
                         <Link to="/conferences">
-                            <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={conference} className="h-6 w-6" />
                                 </div>
@@ -81,7 +81,7 @@ function Home() {
                         </Link>
                         {/* internships */}
                         <Link to="/internships">
-                            <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={internship} className="h-6 w-6" />
                                 </div>
@@ -96,7 +96,7 @@ function Home() {
                         </Link>
                         {/* education */}
                         <Link to="/education">
-                            <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={education} className="h-6 w-6" />
                                 </div>
@@ -111,7 +111,7 @@ function Home() {
                         </Link>
                         {/* certificates */}
                         <Link to="/certificates">
-                            <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={certificate} className="h-6 w-6" />
                                 </div>
@@ -126,7 +126,7 @@ function Home() {
                         </Link>
                         {/* analytics */}
                         <Link to="/analytics">
-                            <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={analytics} className="h-6 w-6" />
                                 </div>
