@@ -32,14 +32,18 @@ function Home() {
                             {" "}available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                         </p>
                         {/* read more */}
-                        <a href="#" className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-gray-200 text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                            Read more
-                            <img src={arrow} className="h-6 w-6 ml-2" />
-                        </a>
+                        <Link to="/about">
+                            <a className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-gray-200 text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                                Read more
+                                <img src={arrow} className="h-6 w-6 ml-2" />
+                            </a>
+                        </Link>
                         {/* contribute */}
-                        <a href="#" className="ml-4 mt-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                            Contribute
-                        </a>
+                        <Link to="/contribute">
+                            <a href="#" className="ml-4 mt-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                                Contribute
+                            </a>
+                        </Link>
                     </div>
                     {/* cards */}
                     <div className="mt-24 mb-8 max-w-screen-xl space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
