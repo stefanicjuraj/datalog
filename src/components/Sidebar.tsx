@@ -51,7 +51,7 @@ const Sidebar: React.FC = () => {
     return (
         <div>
             {/* navbar */}
-            <nav className="fixed top-0 z-50 w-full bg-gray-100 border-b border-gray-200">
+            <nav className="fixed top-0 z-50 w-full bg-[#F9FAFB] border-b border-gray-100">
                 <div className="px-3 py-3 lg:px-5 lg:pl-3">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center justify-start">
@@ -87,10 +87,10 @@ const Sidebar: React.FC = () => {
             <aside
                 id="logo-sidebar"
                 className={`transition-transform left-0 top-0 -translate-x-full fixed top-0 left-0 z-40 w-56 h-screen pt-36 transition-transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"
-                    } bg-gray-50 border-r border-gray-200 sm:translate-x-0`}
+                    } bg-[#F9FAFB] border-r border-gray-100 sm:translate-x-0`}
                 aria-label="Sidebar"
             >
-                <div className="h-full px-3 pb-4 overflow-y-auto bg-gray-50">
+                <div className="h-full px-3 pb-4 overflow-y-auto bg-[#F9FAFB]">
                     <ul className="space-y-3 font-medium">
                         <li>
                             <Link
