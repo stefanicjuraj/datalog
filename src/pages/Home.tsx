@@ -101,7 +101,7 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={education} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>  Education courses</h3>
+                                <h3 className="mb-4 text-xl font-bold"><span className="text-2xl">20+</span>  Education courses</h3>
                                 <p className="mb-2">
                                     Enrol into provided courses, lectures, and classes to learn more about IT and software development.
                                 </p>
