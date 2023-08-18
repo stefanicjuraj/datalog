@@ -43,7 +43,7 @@ function Home() {
                         </a>
                     </div>
                     {/* cards */}
-                    <div className="mt-16 max-w-screen-xl space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
+                    <div className="mt-16 mb-8 max-w-screen-xl space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
                         {/* companies */}
                         <Link to="/companies">
                             <div className="mb-4 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
