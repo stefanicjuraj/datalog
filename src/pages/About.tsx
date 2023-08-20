@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 // import icons
 import github from '../assets/icons/github.svg';
-import like from '../assets/icons/like.svg';
 import readme from '../assets/icons/readme.svg';
 import info from '../assets/icons/info.svg';
 import vercel from '../assets/icons/vercel.svg';
@@ -61,22 +60,20 @@ function About() {
                                 -- ----- is a comprehensive data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                             </p>
                             {/* disclaimer */}
-                            <div id="disclaimer" className="mt-4 mb-4 sm:w-4/5 w-full p-8 shadow-sm shadow-black rounded-3xl bg-[#222]" role="alert">
+                            <div id="disclaimer" className="mt-4 mb-4 sm:w-4/5 w-full p-7 shadow-sm rounded-3xl bg-[#222]" role="alert">
                                 <div className="flex items-center">
                                     <img src={info} className="h-5 w-5 mr-1" />
-                                    <h3 className="text-lg font-medium text-white">Disclaimer</h3>
+                                    <h3 className="text-lg font-bold text-white">Disclaimer</h3>
                                 </div>
-                                <div className="mt-4 mb-4 p-1 text-sm text-white">
-                                    -- ----- does not claim to provide a complete data list of all IT companies in existence. Rather, it serves as a curated selection based on a combination of filtering criteria by industry department, location, data and information availability.
-                                </div>
-                                <div className="flex">
-                                    <button type="button" data-dismiss-target="#disclaimer" aria-label="Close" className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                                        <img src={like} className="h-4 w-4" />
-                                    </button>
+                                <div className="mt-4 p-1 text-sm text-white">
+                                    -- ----- does not claim to provide a complete data list of all IT companies in existence in Croatia.
+                                    <br />
+                                    <br />
+                                    Rather, it serves as a curated selection based on a combination of filtering criteria by industry department, location, data and information availability on the internet platforms and via media presence.
                                 </div>
                             </div>
                             <p className="pt-4 pb-4">
-                                While the majority of listed entities in the directory are founded or based in Croatia, there are instances where certain entities conduct their business, offer services and consultancy, have offices or employ individuals within Croatia while not being headquartered there.
+                                While the majority of listed entities in the directory are founded or based in Croatia, there are instances where certain entities conduct their business, offer services and consultancy, have offices, or employ individuals within Croatia while not being headquartered there.
                             </p>
                             <p className="pt-4 pb-4 text-2xl font-bold">
                                 Regular updates
@@ -89,7 +86,7 @@ function About() {
                                 Contributions
                             </p>
                             <p className="pt-4 pb-4">
-                                Contributions from the community are encouraged and more than welcome to further enhance the directory's value and comprehensiveness, allowing users to suggest additions, updates or feedback. Collaboration with the community ensures the directory remains a reliable and robust resource in the IT industry in Croatia.
+                                Contributions from the community are encouraged and more than welcome to further enhance the directory's value and comprehensiveness, allowing users to suggest additions, updates, and feedback. Collaboration with the community ensures the directory remains a reliable and robust resource in the IT industry in Croatia.
                             </p>
                             {/* contribute */}
                             <Link to="/contribute">
