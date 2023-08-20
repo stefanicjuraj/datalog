@@ -16,7 +16,7 @@ function App() {
             <Sidebar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/" element={<About />} />
+                <Route path="/about" element={<About />} />
                 <Route path="*" element={<PageNotFound />} />
                 <Route path="/conferences" element={<Conferences />} />
                 <Route path="/internships" element={<Internships />} />
