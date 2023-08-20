@@ -22,7 +22,7 @@ function Home() {
                         </h1>
                         {/* header tags */}
                         <div className="flex text-white mt-2 mb-4">
-                            <a className="rounded-full text-md text-center inline-flex items-center">
+                            <a className="rounded-full text-md font-bold text-center inline-flex items-center">
                                 <span className="flex items-center text-normal">
                                     <span className="animate-pulse flex w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0"></span>
                                 </span>
