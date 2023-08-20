@@ -21,11 +21,20 @@ function Home() {
                             -- -----
                         </h1>
                         {/* header tags */}
-                        <div className="flex mt-2">
-                            <a className="text-white bg-[#444] font-bold rounded-full text-sm px-5 py-2 text-center inline-flex items-center mr-1 mb-2">
+                        <div className="flex text-white mt-2 mb-4">
+                            <a className="rounded-full text-md text-center inline-flex items-center">
+                                <span className="flex items-center text-normal">
+                                    <span className="animate-pulse flex w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0"></span>
+                                </span>
                                 In development
                             </a>
-                            <a className="text-white bg-[#444] font-medium rounded-full text-sm px-4 py-1.5 text-center inline-flex items-center ml-1 mb-2">
+                            {/* header tags divider */}
+                            <a className="rounded-full text-md text-center inline-flex items-center ml-3 mr-3">
+                                <span className="flex items-center text-normal">
+                                    |
+                                </span>
+                            </a>
+                            <a className="text-white text-md text-center inline-flex items-center">
                                 <img src={pin} className="h-5 w-5 mr-1" />
                                 Croatia
                             </a>
