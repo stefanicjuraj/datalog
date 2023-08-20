@@ -7,6 +7,7 @@ import certificate from '../assets/icons/certificate-light.svg';
 import analytics from '../assets/icons/analytics-light.svg';
 import arrow from '../assets/icons/arrow-dark.svg';
 import arrowCorner from '../assets/icons/arrow-corner.svg';
+import pin from '../assets/icons/pin.svg';
 
 function Home() {
     return (
@@ -15,13 +16,22 @@ function Home() {
                 <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-xl">
                     {/* header */}
                     <div className="mb-4 sm:p-16 p-8 bg-[#222] sm:rounded-3xl rounded-xl text-left shadow-sm shadow-black">
+                        {/* header title */}
                         <h1 className="sm:text-6xl text-5xl text-white font-bold">
                             -- -----
                         </h1>
-                        <p className="sm:text-1xl text-md mt-4 text-white">
-                            <span className="bg-[#333] text-white text-md font-bold px-2.5 py-1 rounded">In development</span>
-                        </p>
-                        <p className="w-full sm:w-3/4 text-lg mt-4 text-white">
+                        {/* header tags */}
+                        <div className="flex mt-2">
+                            <a className="text-white bg-[#444] font-bold rounded-full text-sm px-5 py-2 text-center inline-flex items-center mr-1 mb-2">
+                                In development
+                            </a>
+                            <a className="text-white bg-[#444] font-medium rounded-full text-sm px-4 py-1.5 text-center inline-flex items-center ml-1 mb-2">
+                                <img src={pin} className="h-5 w-5 mr-1" />
+                                Croatia
+                            </a>
+                        </div>
+                        {/* header description */}
+                        <p className="w-full sm:w-3/4 text-lg mt-2 text-white">
                             A comprehensive data list of IT (ICT) {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">companies</span>, {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">conferences</span>, {" "}
@@ -40,7 +50,7 @@ function Home() {
                         </Link>
                         {/* contribute */}
                         <Link to="/contribute">
-                            <a href="#" className="ml-4 mt-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                            <a href="#" className="ml-3 mt-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                 Contribute
                             </a>
                         </Link>
