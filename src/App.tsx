@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PageNotFound from "./pages/404";
+import Companies from "./pages/Companies";
 import Conferences from "./pages/Conferences";
 import Internships from "./pages/Internships";
 import Education from "./pages/Education";
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<PageNotFound />} />
+                <Route path="/companies" element={<Companies />} />
                 <Route path="/conferences" element={<Conferences />} />
                 <Route path="/internships" element={<Internships />} />
                 <Route path="/education" element={<Education />} />
