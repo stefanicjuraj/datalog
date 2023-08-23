@@ -9,6 +9,7 @@ import internship from "../assets/icons/internship-dark.svg";
 import education from "../assets/icons/education-dark.svg";
 import certificate from "../assets/icons/certificate-dark.svg";
 import analytics from "../assets/icons/analytics-dark.svg";
+import contribute from "../assets/icons/heart-dark.svg";
 
 const Sidebar: React.FC = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -142,6 +143,16 @@ const Sidebar: React.FC = () => {
                                 <img src={analytics} className="ml-1 h-6 w-6" alt="analytics" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Analytics
+                                </span>
+                                <img src={chevron} className="h-5 w-5" alt="chevron" />
+                            </Link>
+                        </li>
+                        <li>
+                            {/* contribute */}
+                            <Link to="/contribute" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/analytics")}`} >
+                                <img src={contribute} className="ml-1 h-6 w-6" alt="contribute" />
+                                <span className="flex-1 ml-2 whitespace-nowrap">
+                                    Contribute
                                 </span>
                                 <img src={chevron} className="h-5 w-5" alt="chevron" />
                             </Link>
