@@ -4,6 +4,7 @@ import github from '../assets/icons/github.svg';
 import readme from '../assets/icons/readme.svg';
 import info from '../assets/icons/info.svg';
 import vercel from '../assets/icons/vercel.svg';
+import arrow from '../assets/icons/arrow-dark.svg';
 
 function About() {
     return (
@@ -90,8 +91,9 @@ function About() {
                             </p>
                             {/* contribute */}
                             <Link to="/contribute">
-                                <a href="#" className="mt-4 mb-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-white">
+                                <a href="#" className="mt-4 mb-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-white">
                                     Contribute
+                                    <img src={arrow} className="h-6 w-6 ml-2" />
                                 </a>
                             </Link>
                         </div>
