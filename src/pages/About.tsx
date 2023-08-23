@@ -32,7 +32,7 @@ function About() {
                             </a>
                             <a className="text-white text-md text-center inline-flex items-center">
                                 Deployed on
-                                <img src={vercel} className="h-5 w-5 ml-1 mr-1" />
+                                <img src={vercel} className="h-5 w-5 ml-1 mr-1" alt="vercel" />
                             </a>
                         </div>
                         {/* header tags */}
@@ -40,14 +40,14 @@ function About() {
                             {/* github */}
                             <Link to="">
                                 <a className="inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                                    <img src={github} className="h-6 w-6 mr-1" />
+                                    <img src={github} className="h-6 w-6 mr-1" alt="github" />
                                     GitHub
                                 </a>
                             </Link>
                             {/* readme */}
                             <Link to="">
                                 <a className="ml-3 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                                    <img src={readme} className="h-6 w-6 mr-1" />
+                                    <img src={readme} className="h-6 w-6 mr-1" alt="readme" />
                                     ReadMe
                                 </a>
                             </Link>
@@ -62,7 +62,7 @@ function About() {
                             {/* disclaimer */}
                             <div id="disclaimer" className="mt-4 mb-4 sm:w-4/5 w-full p-7 shadow-sm rounded-3xl bg-[#222]" role="alert">
                                 <div className="flex items-center">
-                                    <img src={info} className="h-5 w-5 mr-1" />
+                                    <img src={info} className="h-5 w-5 mr-1" alt="disclaimer" />
                                     <h3 className="text-lg font-bold text-white">Disclaimer</h3>
                                 </div>
                                 <div className="mt-4 p-1 text-sm text-white">
