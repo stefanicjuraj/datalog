@@ -66,7 +66,7 @@ const Sidebar: React.FC = () => {
                             <Link to="/" className="flex ml-2 md:mr-24">
                                 <img
                                     src={favicon}
-                                    className="h-14 mr-3"
+                                    className="h-12 mr-3"
                                     alt=""
                                 />
                                 <span className="self-center text-2xl pt-2 font-bold sm:text-3xl whitespace-nowrap">
