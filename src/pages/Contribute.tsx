@@ -109,7 +109,7 @@ function Contribute() {
                                                     <img src={mail} className="h-4 w-4" alt="mail" />
                                                 </span>
                                                 {/* input email */}
-                                                <input type="email" id="email" className="rounded-none rounded-r-lg bg-[#F9FAFB] border border-gray-300 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="john.doe@gmail.com" />
+                                                <input type="email" name="email" id="email" className="rounded-none rounded-r-lg bg-[#F9FAFB] border border-gray-300 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="john.doe@gmail.com" />
                                             </div>
                                             <p className="mt-2 text-sm text-gray-300">Optional - if you want to be contacted back.</p>
                                         </div>
