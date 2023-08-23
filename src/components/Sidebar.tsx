@@ -149,7 +149,7 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* contribute */}
-                            <Link to="/contribute" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/analytics")}`} >
+                            <Link to="/contribute" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/contribute")}`} >
                                 <img src={contribute} className="ml-1 h-6 w-6" alt="contribute" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Contribute
