@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import icons
 import github from '../assets/icons/github.svg';
@@ -5,8 +6,11 @@ import readme from '../assets/icons/readme.svg';
 import info from '../assets/icons/info.svg';
 import vercel from '../assets/icons/vercel.svg';
 import arrow from '../assets/icons/arrow-dark.svg';
+import check from '../assets/icons/check.svg';
 
 function About() {
+    const [disclaimerOpen, setDisclaimerOpen] = useState(true);
+
     return (
         <div className="pl-4 pr-4 pt-12 mb-32 sm:ml-56">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
@@ -61,18 +65,30 @@ function About() {
                                 -- ----- is a comprehensive data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                             </p>
                             {/* disclaimer */}
-                            <div id="disclaimer" className="mt-4 mb-4 sm:w-4/5 w-full p-7 shadow-sm rounded-3xl bg-[#222]" role="alert">
-                                <div className="flex items-center">
-                                    <img src={info} className="h-5 w-5 mr-1" alt="disclaimer" />
-                                    <h3 className="text-lg font-bold text-white">Disclaimer</h3>
+                            {disclaimerOpen && (
+                                <div id="disclaimer" className="mt-4 mb-4 sm:p-8 p-4 border border-gray-200 shadow-sm rounded-xl bg-[#F9FAFB]" role="alert">
+                                    <div className="flex items-center">
+                                        {/* disclaimer icon */}
+                                        <img src={info} className="h-6 w-6 mr-2" alt="disclaimer" />
+                                        {/* disclaimer header */}
+                                        <h3 className="text-2xl font-bold text-black">
+                                            Disclaimer
+                                        </h3>
+                                    </div>
+                                    {/* disclaimer text */}
+                                    <div className="mt-4 mb-0 pl-2 text-md text-[#555]">
+                                        -- ----- does not claim to provide a complete data list of all IT entities in Croatia.
+                                    </div>
+                                    <div className="mt-2 mb-4 pl-2 text-md text-[#555]">
+                                        All data collected is sourced from the publicly available information and sources on the internet, whilst not being affiliated with any of the listed entities.
+                                    </div>
+                                    <div className="flex">
+                                        <button onClick={() => setDisclaimerOpen(false)} type="button" data-dismiss-target="#disclaimer" aria-label="Close" className="ml-2 inline-flex items-center justify-center px-5 py-3 sm:text-md text-sm font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-[#F9FAFB]">
+                                            <img src={check} className="h-4 w-4" alt="check" />
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className="mt-4 p-1 text-sm text-white">
-                                    -- ----- does not claim to provide a complete data list of all IT companies in existence in Croatia.
-                                    <br />
-                                    <br />
-                                    Rather, it serves as a curated selection based on a combination of filtering criteria by industry department, location, data and information availability on the internet platforms and via media presence.
-                                </div>
-                            </div>
+                            )}
                             <p className="pt-4 pb-4">
                                 While the majority of listed entities in the directory are founded or based in Croatia, there are instances where certain entities conduct their business, offer services and consultancy, have offices, or employ individuals within Croatia while not being headquartered there.
                             </p>
