@@ -66,7 +66,7 @@ function About() {
                             </p>
                             {/* disclaimer */}
                             {disclaimerOpen && (
-                                <div id="disclaimer" className="mt-4 mb-4 sm:p-8 p-4 border border-gray-200 shadow-sm rounded-xl bg-[#F9FAFB]" role="alert">
+                                <div id="disclaimer" className="mt-4 mb-4 sm:p-8 p-6 border border-gray-200 shadow-sm rounded-xl bg-[#F9FAFB]" role="alert">
                                     <div className="flex items-center">
                                         {/* disclaimer icon */}
                                         <img src={info} className="h-6 w-6 mr-2" alt="disclaimer" />
@@ -76,10 +76,10 @@ function About() {
                                         </h3>
                                     </div>
                                     {/* disclaimer text */}
-                                    <div className="mt-4 mb-0 pl-2 text-md text-[#555]">
+                                    <div className="mt-4 mb-0 pl-2 text-base text-[#555]">
                                         -- ----- does not claim to provide a complete data list of all IT entities in Croatia.
                                     </div>
-                                    <div className="mt-2 mb-4 pl-2 text-md text-[#555]">
+                                    <div className="mt-2 mb-4 pl-2 text-base text-[#555]">
                                         All data collected is sourced from the publicly available information and sources on the internet, whilst not being affiliated with any of the listed entities.
                                     </div>
                                     <div className="flex">
