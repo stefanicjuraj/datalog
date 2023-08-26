@@ -57,7 +57,7 @@ const Sidebar: React.FC = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center justify-start">
                             {/* navbar toggle menu */}
-                            <a aria-controls="logo-sidebar" type="button" onClick={toggleSidebar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                            <a aria-controls="logo-sidebar" type="button" onClick={toggleSidebar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 cursor-pointer">
                                 <img src={menu} className="h-6 w-6" alt="menu" />
                             </a>
                             {/* favicon */}
