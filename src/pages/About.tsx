@@ -99,6 +99,11 @@ function About() {
                                 To ensure accuracy and relevancy, regular updates are conducted on a monthly basis. This involves the addition of newly established entities while removing inactive or defunct entities from the directory. By maintaining this approach, the focus is to offer a reliable and up-to-date resource for seeking information about IT in Croatia.
 
                             </p>
+                            {/* contribute */}
+                            <a href="" className="mt-4 mb-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-white">
+                                Latest updates
+                                <img src={arrow} className="h-6 w-6 ml-2" />
+                            </a>
                             <p className="pt-4 pb-4 text-2xl font-bold">
                                 Contributions
                             </p>
