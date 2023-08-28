@@ -56,7 +56,7 @@ function Contribute() {
                         </div>
                     </div>
                     {/* Contribute */}
-                    <div className="mt-8 mb-4 sm:p-16 p-8 bg-[#F9FAFB] rounded-xl text-left">
+                    <div className="mt-8 mb-4 sm:p-16 p-8 bg-[#F5F5F5] rounded-xl text-left">
                         <div className="text-lg sm:w-4/5 w-full mx-auto">
                             <p className="pt-4 pb-4 text-2xl font-bold">
                                 Contributions
