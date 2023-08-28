@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import icons
-import github from '../assets/icons/github.svg';
+import github from '../assets/icons/github-light.svg';
 import readme from '../assets/icons/readme.svg';
 import info from '../assets/icons/info.svg';
 import vercel from '../assets/icons/vercel.svg';
