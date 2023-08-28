@@ -41,7 +41,7 @@ function Home() {
                         </div>
                         {/* header description */}
                         <p className="w-full sm:w-3/4 text-lg mt-2 text-white">
-                            A comprehensive data list of IT (ICT) {" "}
+                            A curated data list of IT (ICT) {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">companies</span>, {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">conferences</span>, {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">internships</span>, {" "}
