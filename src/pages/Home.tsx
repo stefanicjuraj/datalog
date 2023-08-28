@@ -15,7 +15,7 @@ function Home() {
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
                 <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-xl">
                     {/* header */}
-                    <div className="mb-4 sm:p-16 p-8 bg-[#222] sm:rounded-3xl rounded-xl text-left shadow-sm shadow-black">
+                    <div className="mb-4 sm:p-16 p-8 bg-[#222] sm:rounded-3xl rounded-xl text-left shadow-sm shadow-black animation glow delay-1">
                         {/* header title */}
                         <h1 className="sm:text-6xl text-5xl text-white font-bold">
                             -- -----
@@ -68,7 +68,7 @@ function Home() {
                     <div className="mt-24 mb-8 max-w-screen-xl space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
                         {/* companies */}
                         <Link to="/companies">
-                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-2">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={company} className="h-6 w-6" />
                                 </div>
@@ -86,7 +86,7 @@ function Home() {
                         </Link>
                         {/* conferences */}
                         <Link to="/conferences">
-                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-3">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={conference} className="h-6 w-6" />
                                 </div>
@@ -104,7 +104,7 @@ function Home() {
                         </Link>
                         {/* internships */}
                         <Link to="/internships">
-                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-4">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={internship} className="h-6 w-6" />
                                 </div>
@@ -119,7 +119,7 @@ function Home() {
                         </Link>
                         {/* education */}
                         <Link to="/education">
-                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-5">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={education} className="h-6 w-6" />
                                 </div>
@@ -134,7 +134,7 @@ function Home() {
                         </Link>
                         {/* certificates */}
                         <Link to="/certificates">
-                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-6">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={certificate} className="h-6 w-6" />
                                 </div>
@@ -149,7 +149,7 @@ function Home() {
                         </Link>
                         {/* analytics */}
                         <Link to="/analytics">
-                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300">
+                            <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-7">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={analytics} className="h-6 w-6" />
                                 </div>
