@@ -62,7 +62,7 @@ function About() {
                     <div className="mt-8 mb-4 sm:p-16 p-8 bg-[#F9FAFB] rounded-xl text-left">
                         <div className="text-lg sm:w-4/5 w-full mx-auto">
                             <p className="pb-4">
-                                -- ----- is a comprehensive data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
+                                -- ----- is a curated data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                             </p>
                             {/* disclaimer */}
                             {disclaimerOpen && (
