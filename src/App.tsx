@@ -10,6 +10,7 @@ import Internships from "./pages/Internships";
 import Education from "./pages/Education";
 import Certificates from "./pages/Certificates";
 import Contribute from "./pages/Contribute";
+import ThankYou from "./pages/ThankYou";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/education" element={<Education />} />
                 <Route path="/certificates" element={<Certificates />} />
                 <Route path="/contribute" element={<Contribute />} />
+                <Route path="/thankyou" element={<ThankYou />} />
             </Routes>
         </Router >
     );
