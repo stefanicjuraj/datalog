@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+// import components
 import Sidebar from "./components/Sidebar";
+import ScrollToTop from "./components/ScrollToTop";
+//import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PageNotFound from "./pages/404";
@@ -11,7 +14,6 @@ import Education from "./pages/Education";
 import Certificates from "./pages/Certificates";
 import Contribute from "./pages/Contribute";
 import ThankYou from "./pages/ThankYou";
-import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
