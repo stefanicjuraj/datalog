@@ -10,11 +10,13 @@ import Internships from "./pages/Internships";
 import Education from "./pages/Education";
 import Certificates from "./pages/Certificates";
 import Contribute from "./pages/Contribute";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
         <Router>
             <Sidebar />
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
