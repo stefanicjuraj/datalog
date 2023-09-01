@@ -69,10 +69,12 @@ const Sidebar: React.FC = () => {
                                 </span>
                             </Link>
                         </div>
-                        <div className="flex items-center">
-                            <div className="flex items-center ml-3">
-                                <div>
-                                </div>
+                        {/* last updated */}
+                        <div className="flex items-center mr-3">
+                            <img src={github} className="mr-3 h-7 w-7" alt="github" />
+                            <div>
+                                <p className="text-md text-black">Last updated:</p>
+                                <p className="text-md text-black">Date</p>
                             </div>
                         </div>
                     </div>
