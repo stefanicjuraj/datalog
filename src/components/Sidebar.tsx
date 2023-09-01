@@ -166,12 +166,12 @@ const Sidebar: React.FC = () => {
                     {/* github */}
                     <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
                         {/* github icon */}
-                        <img src={github} className="ml-1 h-6 w-6" alt="contribute" />
+                        <img src={github} className="ml-1 h-6 w-6" alt="github" />
                     </a>
                     {/* linkedin */}
                     <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
                         {/* linkedin icon */}
-                        <img src={linkedin} className="ml-1 h-6 w-6" alt="contribute" />
+                        <img src={linkedin} className="ml-1 h-6 w-6" alt="linkedin" />
                     </a>
                 </div>
             </aside>
