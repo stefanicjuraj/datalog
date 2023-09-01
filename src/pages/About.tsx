@@ -62,7 +62,7 @@ function About() {
                     <div className="mt-8 mb-4 sm:p-16 p-8 bg-[#F5F5F5] rounded-xl text-left">
                         <div className="text-lg sm:w-4/5 w-full mx-auto">
                             <p className="pb-4">
-                                -- ----- is a curated data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
+                                IT Datalog is a curated data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
                             </p>
                             {/* disclaimer */}
                             {disclaimerOpen && (
@@ -77,7 +77,7 @@ function About() {
                                     </div>
                                     {/* disclaimer text */}
                                     <div className="mt-4 mb-0 pl-2 text-base text-[#555]">
-                                        -- ----- does not claim to provide a complete data list of all IT entities in Croatia.
+                                        IT Datalog does not claim to provide a complete data list of all IT entities in Croatia.
                                     </div>
                                     <div className="mt-2 mb-4 pl-2 text-base text-[#555]">
                                         All data collected is sourced from the publicly available information and sources on the internet, whilst not being affiliated with any of the listed entities.
@@ -90,13 +90,13 @@ function About() {
                                 </div>
                             )}
                             <p className="pt-4 pb-4">
-                                While the majority of listed entities in the directory are founded or based in Croatia, there are instances where certain entities conduct their business, offer services and consultancy, have offices, or employ individuals within Croatia while not being headquartered there.
+                                While the majority of listed entities in the datalog are founded or based in Croatia, there are instances where certain entities conduct their business, offer services and consultancy, have offices, or employ individuals within Croatia while not being headquartered there.
                             </p>
                             <p className="pt-4 pb-4 text-2xl font-bold">
                                 Regular updates
                             </p>
                             <p className="pt-4 pb-4">
-                                To ensure accuracy and relevancy, regular updates are conducted on a monthly basis. This involves the addition of newly established entities while removing inactive or defunct entities from the directory. By maintaining this approach, the focus is to offer a reliable and up-to-date resource for seeking information about IT in Croatia.
+                                To ensure accuracy and relevancy, regular updates are conducted on a monthly basis. This involves the addition of newly established entities while removing inactive or defunct entities from the datalog. By maintaining this approach, the focus is to offer a reliable and up-to-date resource for seeking information about IT in Croatia.
                             </p>
                             {/* latest updates */}
                             <a href="" className="mt-4 mb-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-white">
