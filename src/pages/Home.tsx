@@ -18,7 +18,7 @@ function Home() {
                     <div className="mb-4 sm:p-16 p-8 bg-[#222] sm:rounded-3xl rounded-xl text-left shadow-sm shadow-black animation glow delay-1">
                         {/* header title */}
                         <h1 className="sm:text-6xl text-5xl text-white font-bold">
-                            -- -----
+                            IT Datalog
                         </h1>
                         {/* header tags */}
                         <div className="flex text-white mt-2 mb-4">
