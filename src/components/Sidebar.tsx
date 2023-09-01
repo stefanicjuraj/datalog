@@ -54,8 +54,10 @@ const Sidebar: React.FC = () => {
     // format date
     const formatDate = (isoDate: string | number | Date) => {
         const date = new Date(isoDate);
-        const options = { month: "long", day: "numeric" };
-        return date.toLocaleDateString("en-US", options);
+        return date.toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+        });
     };
 
     // fetch latest commit date from github
