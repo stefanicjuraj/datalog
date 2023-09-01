@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import favicon from "../../public/favicon.svg";
+import favicon from "../../public/favicon-dark.svg";
 import menu from "../assets/icons/menu.svg";
 import chevron from "../assets/icons/chevron-right.svg";
 import company from "../assets/icons/company-dark.svg";
@@ -11,7 +11,7 @@ import certificate from "../assets/icons/certificate-dark.svg";
 import analytics from "../assets/icons/analytics-dark.svg";
 import contribute from "../assets/icons/heart-dark.svg";
 import github from "../assets/icons/github-dark.svg";
-import linkedin from "../assets/icons/linkedin.svg";
+import linkedin from "../assets/icons/linkedin-dark.svg";
 
 const Sidebar: React.FC = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
