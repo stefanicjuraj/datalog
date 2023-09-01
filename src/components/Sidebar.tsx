@@ -51,6 +51,34 @@ const Sidebar: React.FC = () => {
         return activePath === path ? 'bg-gray-200' : "";
     };
 
+    // format date
+    const formatDate = (isoDate: string | number | Date) => {
+        const date = new Date(isoDate);
+        const options = { month: "long", day: "numeric" };
+        return date.toLocaleDateString("en-US", options);
+    };
+
+    // fetch latest commit date from github
+    const latestCommit = async () => {
+        const githubRepo = "stefanicjuraj/IT-Datalog";
+        const response = await fetch(`https://api.github.com/repos/${githubRepo}/commits`);
+        const data = await response.json();
+        const latestCommitDate = formatDate(data[0].commit.author.date);
+        return latestCommitDate;
+    };
+
+    const [date, setDate] = useState("");
+
+    // update the date
+    const updateDate = async () => {
+        const latestCommitDate = await latestCommit();
+        setDate(latestCommitDate);
+    };
+
+    useEffect(() => {
+        updateDate();
+    }, []);
+
     return (
         <div>
             {/* navbar */}
@@ -74,7 +102,7 @@ const Sidebar: React.FC = () => {
                             {/* <img src={github} className="mr-3 h-7 w-7" alt="github" /> */}
                             <div>
                                 <p className="text-md text-black">Last updated:</p>
-                                <p className="text-md text-black">Date</p>
+                                <p className="text-md text-black">{date}</p>
                             </div>
                         </div>
                     </div>
