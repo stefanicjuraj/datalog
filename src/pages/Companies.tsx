@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
+// import icons
 import pin from '../assets/icons/pin.svg';
+import search from '../assets/icons/search.svg';
 
 function Companies() {
     return (
@@ -37,6 +40,35 @@ function Companies() {
                             <h1 className="w-full sm:w-3/4 text-lg mt-2 text-white">
                                 A curated datalog of IT (ICT) <span className="bg-[#333] px-1 py-0.3 rounded-lg">companies</span>, <span className="bg-[#333] px-1 py-0.3 rounded-lg">agencies</span>,{" "} and <span className="bg-[#333] px-1 py-0.3 rounded-lg">consultancies</span> conducting business operations, providing services, or offering consultancy in Croatia.
                             </h1>
+                        </div>
+                    </div>
+                    {/* search & contribute div */}
+                    <div className="flex flex-col items-center max-w-screen-2xl sm:px-4 px-0 mx-auto mt-8 mb-4 sm:flex-row sm:justify-between">
+                        {/* search form */}
+                        <form className="flex items-center animation glow delay-1">
+                            <div className="relative sm:w-96 w-80">
+                                <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                                    {/* search icon */}
+                                    <img src={search} className="h-4 w-4" alt="Search Icon" />
+                                </div>
+                                {/* search input */}
+                                <input type="email" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by company" />
+                                <p id="searchResults" className="text-black absolute right-2 bottom-2 bg-[#eee] focus:ring-4 focus:outline-none rounded-xl text-base px-5 py-2">
+                                    {/* search filtered data - results count */}
+                                    results
+                                </p>
+                            </div>
+                        </form>
+                        <div className="flex items-center">
+                            {/* contribute text prompt */}
+                            <Link to="/contribute" className="sm:text-lg text-md sm:mt-0 mt-4 animation glow delay-1">
+                                <h1 className="mr-3 sm:text-lg text-md text-[#AAA] hover:text-black whitespace-nowrap">
+                                    Can't find your favorite company?{' '}
+                                    <span className="underline sm:text-lg text-md">
+                                        Suggest it!
+                                    </span>
+                                </h1>
+                            </Link>
                         </div>
                     </div>
                 </div>
