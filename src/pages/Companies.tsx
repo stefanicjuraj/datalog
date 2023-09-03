@@ -1,9 +1,161 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import icons
 import pin from '../assets/icons/pin.svg';
 import search from '../assets/icons/search.svg';
+import contact from '../assets/icons/contact-dark.svg';
+import linkedin from '../assets/icons/linkedin-dark.svg';
+import career from '../assets/icons/career-dark.svg';
+import loading from '../assets/icons/loading.svg';
+import chevronUp from '../assets/icons/chevron-up-light.svg';
+import chevronDown from '../assets/icons/chevron-down-light.svg';
+
+interface Company {
+    "Company": string;
+    "Website": string;
+    "Industry": string[];
+    "Contact": string;
+    "LinkedIn": string;
+    "Career": string;
+    "Employees": string;
+    "Location": string;
+}
+
+function CompaniesTable({ company }: { company: Company }) {
+    return (
+        <tr className="bg-[#FFF] hover:bg-[#fff] border-b">
+            {/* company */}
+            <th scope="row" className="pl-6 py-5 text-xl text-black font-bold whitespace-nowrap">
+                {company["Company"]}
+                <br />
+                {/* website */}
+                <a href={company["Website"]} className="text-base text-[#aaa] font-normal hover:underline" target="_blank" rel="noopener noreferrer">
+                    {company["Website"]}
+                </a>
+            </th>
+            {/* industry */}
+            <td className="sm:pl-0 pl-4">
+                {company["Industry"] && company["Industry"].map((industry, index) => (
+                    <a key={index} className="mr-1 px-3 py-2 text-sm text-black font-medium bg-[#eee] rounded-xl text-center items-center" target="_blank" rel="noopener noreferrer">
+                        {/* industry data */}
+                        {industry}
+                    </a>
+                ))}
+            </td>
+            {/* contact */}
+            <td className="sm:pl-4 pl-8">
+                <a href={company["Contact"]} className="px-4 py-3 mr-0 mb-2 text-gray-500 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                    {/* contact icon */}
+                    <img src={contact} className="h-7 w-7" alt="contact" />
+                </a>
+            </td>
+            {/* careers */}
+            <td className="sm:pl-6 pl-8">
+                <a href={company["LinkedIn"]} className="px-4 py-3 mr-0 mb-2 text-gray-500 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                    {/* careers */}
+                    <img src={linkedin} className="h-7 w-7" alt="career" />
+                </a>
+            </td>
+            {/* careers */}
+            <td className="sm:pl-4 pl-8">
+                <a href={company["Career"]} className="px-4 py-3 mr-0 mb-2 text-gray-500 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                    {/* career icon */}
+                    <img src={career} className="h-7 w-7" alt="careers" />
+                </a>
+            </td>
+            {/* employees */}
+            <td className="pl-4">
+                <a className="px-4 py-3 mr-0 mb-2 text-black text-md text-center font-md rounded-xl inline-flex items-center truncate" target="_blank" rel="noopener noreferrer">
+                    {/* linkedin icon */}
+                    {company["Employees"]}
+                </a>
+            </td>
+        </tr>
+    );
+}
 
 function Companies() {
+    const [jsonData, setJsonData] = useState<Company[]>([]);
+    const [filteredData, setFilteredData] = useState<Company[]>([]);
+    const [searchTerm, setSearchTerm] = useState<string>("");
+    const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+    const [isLoading, setIsLoading] = useState(true);
+
+    // fetch data
+    useEffect(() => {
+        setIsLoading(true);
+        fetch("")
+            .then((response) => response.json())
+            .then((jsonDataResponse) => {
+                setJsonData(jsonDataResponse);
+                setFilteredData(jsonDataResponse);
+            })
+            .catch((error) => console.error("Error fetching data: ", error))
+            .finally(() => setIsLoading(false));
+    }, []);
+
+    // filter data by company name
+    const filterData = (searchTerm: string) => {
+        const filteredData = jsonData.filter((company) =>
+            company["Company"].toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setFilteredData(filteredData);
+    };
+
+    // sort data
+    const sortData = () => {
+        const sortedData = [...filteredData].sort((a, b) => {
+            const aValue = a["Company"].toLowerCase();
+            const bValue = b["Company"].toLowerCase();
+            return sortOrder === "asc" ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+        });
+        setFilteredData(sortedData);
+    };
+
+    // sort data order
+    useEffect(() => {
+        sortData();
+    }, [sortOrder]);
+
+    // sort by company column
+    const handleSort = () => {
+        setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+    };
+
+    // search input
+    const tableRef = useRef<HTMLTableElement>(null);
+
+    // handle search input change
+    const handleSearchInputChange = (
+        event: React.ChangeEvent<HTMLInputElement>
+    ) => {
+        const searchTerm = event.target.value.trim();
+        setSearchTerm(searchTerm);
+        filterData(searchTerm);
+
+        // search results
+        if (tableRef.current) {
+            tableRef.current.innerHTML =
+                filteredData.map((company) => (
+                    <CompaniesTable
+                        key={company["Company"]}
+                        company={company}
+                    />
+                )).join("");
+        }
+    };
+
+    // table no results message
+    function NoResultsMessage() {
+        return (
+            <tr>
+                <td colSpan={6} className="text-center py-16 text-black">
+                    No results found.
+                </td>
+            </tr>
+        );
+    }
+
     return (
         <div className="p-4 pt-12 sm:ml-56">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
@@ -52,10 +204,10 @@ function Companies() {
                                     <img src={search} className="h-4 w-4" alt="Search Icon" />
                                 </div>
                                 {/* search input */}
-                                <input type="email" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by company" />
+                                <input value={searchTerm} onChange={handleSearchInputChange} type="email" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by company" />
                                 <p id="searchResults" className="text-black absolute right-2 bottom-2 bg-[#eee] focus:ring-4 focus:outline-none rounded-xl text-base px-5 py-2">
                                     {/* search filtered data - results count */}
-                                    results
+                                    {filteredData.length} results
                                 </p>
                             </div>
                         </form>
@@ -79,8 +231,9 @@ function Companies() {
                             <thead className="text-xl text-white animation glow delay-2">
                                 <tr className="bg-[#222]">
                                     {/* company */}
-                                    <th className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
-                                        <h1>Company</h1>
+                                    <th onClick={handleSort} className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
+                                        <h1 className="inline-flex">Company</h1>
+                                        {sortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="Up Arrow" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow" />}
                                     </th>
                                     {/* industry & services */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
@@ -106,12 +259,25 @@ function Companies() {
                             </thead>
                             {/* table body */}
                             <tbody id="companyTableBody" className="animation glow delay-3">
-                                <tr>
-                                    <td colSpan={6} className="text-center py-16">
-                                        <div className="flex items-center justify-center">
-                                        </div>
-                                    </td>
-                                </tr>
+                                {/* loading */}
+                                {isLoading ? (
+                                    <tr>
+                                        <td colSpan={6} className="text-center py-16">
+                                            <div className="flex items-center justify-center">
+                                                {/*  loading spinner icon */}
+                                                <img src={loading} className="h-10 w-10 animate-spin" alt="loading" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ) : (
+                                    filteredData.length === 0 ? (
+                                        <NoResultsMessage />
+                                    ) : (
+                                        filteredData.map((company) => (
+                                            <CompaniesTable key={company["Company"]} company={company} />
+                                        ))
+                                    )
+                                )}
                             </tbody>
                         </table>
                     </div>
