@@ -71,6 +71,46 @@ function Internships() {
                             </Link>
                         </div>
                     </div>
+                    {/* table div */}
+                    <div className="max-w-screen-2xl mt-8 mb-40 sm:px-4 px-0 mx-auto relative overflow-x-auto">
+                        {/* table */}
+                        <table className="mt-0 text-left w-full mx-auto">
+                            {/* table header */}
+                            <thead className="text-xl text-white animation glow delay-2">
+                                <tr className="bg-[#222]">
+                                    {/* internship */}
+                                    <th className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
+                                        <h1>Internship</h1>
+                                    </th>
+                                    {/* industry & departments */}
+                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
+                                        <h1>Industry & Departments</h1>
+                                    </th>
+                                    {/* company */}
+                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
+                                        <h1>Company</h1>
+                                    </th>
+                                    {/* location */}
+                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
+                                        <h1>Location</h1>
+                                    </th>
+                                    {/* apply */}
+                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap rounded-r-xl">
+                                        <h1>Apply</h1>
+                                    </th>
+                                </tr>
+                            </thead>
+                            {/* table body */}
+                            <tbody id="companyTableBody" className="animation glow delay-3">
+                                <tr>
+                                    <td colSpan={5} className="text-center py-16">
+                                        <div className="flex items-center justify-center">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
