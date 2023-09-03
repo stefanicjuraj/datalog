@@ -52,16 +52,16 @@ function Home() {
                         </h1>
                         {/* read more */}
                         <Link to="/about">
-                            <a className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                            <h1 className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                 Read more
                                 <img src={arrow} className="h-6 w-6 ml-2" />
-                            </a>
+                            </h1>
                         </Link>
                         {/* contribute */}
                         <Link to="/contribute">
-                            <a href="#" className="ml-3 mt-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                            <h1 className="ml-3 mt-4 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                 Contribute
-                            </a>
+                            </h1>
                         </Link>
                     </div>
                     {/* cards */}
