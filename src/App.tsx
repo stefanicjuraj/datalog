@@ -14,6 +14,7 @@ import Education from "./pages/Education";
 import Certificates from "./pages/Certificates";
 import Contribute from "./pages/Contribute";
 import ThankYou from "./pages/ThankYou";
+import DataOverview from "./pages/DataOverview";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/certificates" element={<Certificates />} />
                 <Route path="/contribute" element={<Contribute />} />
                 <Route path="/thankyou" element={<ThankYou />} />
+                <Route path="/data" element={<DataOverview />} />
             </Routes>
         </Router >
     );
