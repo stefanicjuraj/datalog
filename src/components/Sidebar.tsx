@@ -173,10 +173,10 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* analytics */}
-                            <Link to="/analytics" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/analytics")}`} >
+                            <Link to="/data" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/analytics")}`} >
                                 <img src={analytics} className="ml-1 h-6 w-6" alt="analytics" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
-                                    Analytics
+                                    Data Overview
                                 </span>
                                 <img src={chevron} className="h-5 w-5" alt="chevron" />
                             </Link>
