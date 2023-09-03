@@ -35,7 +35,7 @@ function DataOverview() {
                             </div>
                             {/* header description */}
                             <h1 className="w-full sm:w-3/4 text-lg mt-2 text-white">
-                                A curated datalog overview of IT (ICT) <span className="bg-[#333] px-1 py-0.3 rounded-lg">analytics</span>, <span className="bg-[#333] px-1 py-0.3 rounded-lg">statistics</span>,{" "} and <span className="bg-[#333] px-1 py-0.3 rounded-lg">insights</span> gathered within the datalog.
+                                A curated datalog overview of IT (ICT) <span className="bg-[#333] px-1 py-0.3 rounded-lg">data</span>,{" "} <span className="bg-[#333] px-1 py-0.3 rounded-lg">analytics</span>, <span className="bg-[#333] px-1 py-0.3 rounded-lg">statistics</span>,{" "} and <span className="bg-[#333] px-1 py-0.3 rounded-lg">insights</span> gathered within the datalog.
                             </h1>
                         </div>
                     </div>
