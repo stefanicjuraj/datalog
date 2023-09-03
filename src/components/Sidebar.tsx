@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import favicon from "../../public/favicon-dark.svg";
-import menu from "../assets/icons/menu.svg";
+import favicon from "../../public/favicon-light.svg";
+import menu from "../assets/icons/menu-light.svg";
 import chevron from "../assets/icons/chevron-right.svg";
 import company from "../assets/icons/company-dark.svg";
 import conference from "../assets/icons/conference-dark.svg";
@@ -10,8 +10,8 @@ import education from "../assets/icons/education-dark.svg";
 import certificate from "../assets/icons/certificate-dark.svg";
 import analytics from "../assets/icons/analytics-dark.svg";
 import contribute from "../assets/icons/heart-dark.svg";
-import github from "../assets/icons/github-dark.svg";
-import linkedin from "../assets/icons/linkedin-dark.svg";
+// import github from "../assets/icons/github-dark.svg";
+// import linkedin from "../assets/icons/linkedin-dark.svg";
 
 const Sidebar: React.FC = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -84,12 +84,12 @@ const Sidebar: React.FC = () => {
     return (
         <div>
             {/* navbar */}
-            <nav className="fixed top-0 z-50 w-full bg-[#F9FAFB] border-b border-gray-100">
+            <nav className="fixed top-0 z-50 w-full bg-[#222] border-b border-gray-100">
                 <div className="px-3 py-3 lg:px-5 lg:pl-3">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center justify-start">
                             {/* navbar toggle menu */}
-                            <a aria-controls="logo-sidebar" type="button" onClick={toggleSidebar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 cursor-pointer">
+                            <a aria-controls="logo-sidebar" type="button" onClick={toggleSidebar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-[#333] focus:outline-none focus:ring-2 focus:ring-[#333] cursor-pointer">
                                 <img src={menu} className="h-6 w-6" alt="menu" />
                             </a>
                             {/* favicon */}
@@ -103,20 +103,20 @@ const Sidebar: React.FC = () => {
                         <div className="flex items-center mr-3">
                             {/* <img src={github} className="mr-3 h-7 w-7" alt="github" /> */}
                             <div>
-                                <p className="text-md text-black">Last updated:</p>
-                                <p className="text-md text-black">{date}</p>
+                                <p className="text-md text-white">Last updated:</p>
+                                <p className="text-md text-white">{date}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
             {/* sidebar */}
-            <aside id="logo-sidebar" className={`transition-transform left-0 top-0 -translate-x-full fixed top-0 left-0 z-40 w-56 h-screen pt-36 transition-transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} bg-[#F9FAFB] border-r border-gray-100 sm:translate-x-0`} aria-label="Sidebar">
+            <aside id="logo-sidebar" className={`transition-transform left-0 top-0 -translate-x-full fixed top-0 left-0 z-40 w-56 h-screen pt-36 transition-transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} bg-[#F9FAFB] border-r border-[#EEE] sm:translate-x-0`} aria-label="Sidebar">
                 <div className="h-full px-3 pb-4 overflow-y-auto bg-[#F9FAFB]">
                     <ul className="space-y-3 font-medium">
                         <li>
                             {/* companies */}
-                            <Link to="/companies" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/companies")}`}>
+                            <Link to="/companies" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/companies")}`}>
                                 <img src={company} className="ml-1 h-6 w-6" alt="company" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Companies
@@ -129,7 +129,7 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* conferences */}
-                            <Link to="/conferences" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/conferences")}`}>
+                            <Link to="/conferences" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/conferences")}`}>
                                 <img src={conference} className="ml-1 h-6 w-6" alt="conference" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Conferences
@@ -140,7 +140,7 @@ const Sidebar: React.FC = () => {
                         <li>
                             {/* internships */}
                             <Link
-                                to="/internships" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/internships")}`}>
+                                to="/internships" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/internships")}`}>
                                 <img src={internship} className="ml-1 h-6 w-6" alt="internship" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Internships
@@ -150,7 +150,7 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* education */}
-                            <Link to="/education" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/education")}`}>
+                            <Link to="/education" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/education")}`}>
                                 <img src={education} className="ml-1 h-6 w-6" alt="education" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Education
@@ -160,7 +160,7 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* certificates */}
-                            <Link to="/certificates" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/certificates")}`} >
+                            <Link to="/certificates" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/certificates")}`} >
                                 <img src={certificate} className="ml-1 h-6 w-6" alt="certificate" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Certificates
@@ -173,7 +173,7 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* analytics */}
-                            <Link to="/analytics" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/analytics")}`} >
+                            <Link to="/analytics" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/analytics")}`} >
                                 <img src={analytics} className="ml-1 h-6 w-6" alt="analytics" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Analytics
@@ -183,7 +183,7 @@ const Sidebar: React.FC = () => {
                         </li>
                         <li>
                             {/* contribute */}
-                            <Link to="/contribute" className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group ${activeClass("/contribute")}`} >
+                            <Link to="/contribute" className={`flex items-center p-2 text-black rounded-lg hover:bg-gray-200 group ${activeClass("/contribute")}`} >
                                 <img src={contribute} className="ml-1 h-6 w-6" alt="contribute" />
                                 <span className="flex-1 ml-2 whitespace-nowrap">
                                     Contribute
@@ -196,15 +196,15 @@ const Sidebar: React.FC = () => {
                 {/* sidebar footer */}
                 <div className="absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full flex bg-[#F9FAFB] z-20">
                     {/* github */}
-                    <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
-                        {/* github icon */}
-                        <img src={github} className="ml-1 h-6 w-6" alt="github" />
-                    </a>
+                    {/* <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100"> */}
+                    {/* github icon */}
+                    {/* <img src={github} className="ml-1 h-6 w-6" alt="github" /> */}
+                    {/* </a> */}
                     {/* linkedin */}
-                    <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
-                        {/* linkedin icon */}
-                        <img src={linkedin} className="ml-1 h-6 w-6" alt="linkedin" />
-                    </a>
+                    {/* <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100"> */}
+                    {/* linkedin icon */}
+                    {/* <img src={linkedin} className="ml-1 h-6 w-6" alt="linkedin" /> */}
+                    {/* </a> */}
                 </div>
             </aside>
         </div>
