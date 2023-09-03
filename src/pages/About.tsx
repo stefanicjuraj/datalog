@@ -61,9 +61,9 @@ function About() {
                     {/* about */}
                     <div className="mt-8 mb-4 sm:p-16 p-8 bg-[#F5F5F5] rounded-xl text-left">
                         <div className="text-lg sm:w-4/5 w-full mx-auto">
-                            <p className="pb-4">
+                            <h1 className="pb-4">
                                 IT Datalog is a curated data list of IT (ICT) companies, conferences, internships, education, certificates, and analytics available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
-                            </p>
+                            </h1>
                             {/* disclaimer */}
                             {disclaimerOpen && (
                                 <div id="disclaimer" className="mt-4 mb-4 sm:p-8 p-6 border border-gray-200 shadow-sm rounded-xl bg-[#F9FAFB]" role="alert">
@@ -77,10 +77,10 @@ function About() {
                                     </div>
                                     {/* disclaimer text */}
                                     <div className="mt-4 mb-0 pl-2 text-base text-[#555]">
-                                        IT Datalog does not claim to provide a complete data list of all IT entities in Croatia.
+                                        <h1>IT Datalog does not claim to provide a complete data list of all IT entities in Croatia.</h1>
                                     </div>
                                     <div className="mt-2 mb-4 pl-2 text-base text-[#555]">
-                                        All data collected is sourced from the publicly available information and sources on the internet, whilst not being affiliated with any of the listed entities.
+                                        <h1>All data collected is sourced from the publicly available information and sources on the internet, whilst not being affiliated with any of the listed entities.</h1>
                                     </div>
                                     <div className="flex">
                                         <button onClick={() => setDisclaimerOpen(false)} type="button" data-dismiss-target="#disclaimer" aria-label="Close" className="ml-2 inline-flex items-center justify-center px-5 py-3 sm:text-md text-sm font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-[#F9FAFB]">
@@ -92,9 +92,9 @@ function About() {
                             <p className="pt-4 pb-4">
                                 While the majority of listed entities in the datalog are founded or based in Croatia, there are instances where certain entities conduct their business, offer services and consultancy, have offices, or employ individuals within Croatia while not being headquartered there.
                             </p>
-                            <p className="pt-4 pb-4 text-2xl font-bold">
+                            <h1 className="pt-4 pb-4 text-2xl font-bold">
                                 Regular updates
-                            </p>
+                            </h1>
                             <p className="pt-4 pb-4">
                                 To ensure accuracy and relevancy, regular updates are conducted on a monthly basis. This involves the addition of newly established entities while removing inactive or defunct entities from the datalog. By maintaining this approach, the focus is to offer a reliable and up-to-date resource for seeking information about IT in Croatia.
                             </p>
@@ -103,9 +103,9 @@ function About() {
                                 Latest updates
                                 <img src={arrow} className="h-6 w-6 ml-2" />
                             </a>
-                            <p className="pt-4 pb-4 text-2xl font-bold">
+                            <h1 className="pt-4 pb-4 text-2xl font-bold">
                                 Contributions
-                            </p>
+                            </h1>
                             <p className="pt-4 pb-4">
                                 Contributions from the community are encouraged and more than welcome to further enhance the directory's value and comprehensiveness, allowing users to suggest additions, updates, and feedback. Collaboration with the community ensures the directory remains a reliable and robust resource in the IT industry in Croatia.
                             </p>

@@ -58,9 +58,9 @@ function Contribute() {
                     {/* Contribute */}
                     <div className="mt-8 mb-4 sm:p-16 p-8 bg-[#F5F5F5] rounded-xl text-left">
                         <div className="text-lg sm:w-4/5 w-full mx-auto">
-                            <p className="pt-4 pb-4 font-bold">
+                            <h1 className="pt-4 pb-4 font-bold">
                                 Thank you for your interest in contributing!
-                            </p>
+                            </h1>
                             <p className="pt-4 pb-4">
                                 We value your input and encourage you to share your expertise by suggesting new additions, updates, and providing valuable feedback. This collaborative effort ensures that the directory remains a dynamic and up-to-date source of information, benefiting both professionals and beginners in the field.
                             </p>

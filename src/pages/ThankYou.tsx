@@ -14,9 +14,9 @@ function ThankYou() {
                                 Submitted!
                             </h1>
                             {/* header description */}
-                            <p className="mt-4 w-full sm:w-3/4 text-lg text-white">
+                            <h1 className="mt-4 w-full sm:w-3/4 text-lg text-white">
                                 Thank you for your contribution!
-                            </p>
+                            </h1>
                             <p className="mt-2 w-full sm:w-3/4 text-lg text-white">
                                 Your contribution is processed, and we look forward to integrating your input.
                             </p>

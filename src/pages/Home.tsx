@@ -22,25 +22,25 @@ function Home() {
                         </h1>
                         {/* header tags */}
                         <div className="flex text-white mt-4 mb-4">
-                            <a className="rounded-full text-md font-bold text-center inline-flex items-center">
+                            <p className="rounded-full text-md font-bold text-center inline-flex items-center">
                                 <span className="flex items-center text-normal">
                                     <span className="animate-pulse flex w-2 h-2 bg-white rounded-full mr-2 flex-shrink-0"></span>
                                 </span>
                                 In development
-                            </a>
+                            </p>
                             {/* header tags divider */}
-                            <a className="rounded-full text-md text-center inline-flex items-center ml-3 mr-3">
+                            <p className="rounded-full text-md text-center inline-flex items-center ml-3 mr-3">
                                 <span className="flex items-center text-normal">
                                     |
                                 </span>
-                            </a>
-                            <a className="text-white text-md text-center inline-flex items-center">
+                            </p>
+                            <h1 className="text-white text-md text-center inline-flex items-center">
                                 <img src={pin} className="h-5 w-5 mr-1" />
                                 Croatia
-                            </a>
+                            </h1>
                         </div>
                         {/* header description */}
-                        <p className="w-full sm:w-3/4 text-lg mt-2 text-white">
+                        <h1 className="w-full sm:w-3/4 text-lg mt-2 text-white">
                             A curated data catalog of IT (ICT) {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">companies</span>, {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">conferences</span>, {" "}
@@ -49,7 +49,7 @@ function Home() {
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">certificates</span>, {" "} and {" "}
                             <span className="bg-[#333] px-1 py-0.3 rounded-lg">analytics</span>
                             {" "}available in Croatia, within the industry departments of Information Technology, Software Development, Web Development, IT Services, and IT Consulting.
-                        </p>
+                        </h1>
                         {/* read more */}
                         <Link to="/about">
                             <a className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
@@ -72,13 +72,13 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={company} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold">
+                                <h1 className="mb-4 text-xl font-bold">
                                     <span className="text-2xl">540+ {" "}</span>
                                     Companies
-                                </h3>
-                                <p className="mb-2">
+                                </h1>
+                                <h1 className="mb-2">
                                     View companies conducting business operations, providing services, or offering consultancy in Croatia.
-                                </p>
+                                </h1>
                                 <div className="flex flex-row-reverse">
                                     <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
@@ -90,13 +90,13 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={conference} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold">
+                                <h1 className="mb-4 text-xl font-bold">
                                     <span className="text-2xl">10+ {" "}</span>
                                     Conferences
-                                </h3>
-                                <p className="mb-2">
+                                </h1>
+                                <h1 className="mb-2">
                                     Attend conferences and presentations with industry knowledge professionals and enthusiasts.
-                                </p>
+                                </h1>
                                 <div className="flex flex-row-reverse">
                                     <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
@@ -108,10 +108,10 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={internship} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>   Internships</h3>
-                                <p className="mb-2">
+                                <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>   Internships</h1>
+                                <h1 className="mb-2">
                                     Start your career and enhance your professional knowledge by applying to offered internship programs.
-                                </p>
+                                </h1>
                                 <div className="flex flex-row-reverse">
                                     <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
@@ -123,10 +123,10 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={education} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold"><span className="text-2xl">20+</span>  Education courses</h3>
-                                <p className="mb-2">
+                                <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">20+</span>  Education courses</h1>
+                                <h1 className="mb-2">
                                     Enrol into provided courses, lectures, and classes to learn more about IT and software development.
-                                </p>
+                                </h1>
                                 <div className="flex flex-row-reverse">
                                     <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
@@ -138,10 +138,10 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={certificate} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>  Certificates</h3>
-                                <p className="mb-2">
+                                <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>  Certificates</h1>
+                                <h1 className="mb-2">
                                     Search for the certifications to master and demonstrate your professional knowledge and skills.
-                                </p>
+                                </h1>
                                 <div className="flex flex-row-reverse">
                                     <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
@@ -153,10 +153,10 @@ function Home() {
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
                                     <img src={analytics} className="h-6 w-6" />
                                 </div>
-                                <h3 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span> Analytics & Insights </h3>
-                                <p className="mb-2">
+                                <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span> Analytics & Insights </h1>
+                                <h1 className="mb-2">
                                     Observe and gain insight into the industry trends, statistics, and data to amplify your decision-making.
-                                </p>
+                                </h1>
                                 <div className="flex flex-row-reverse">
                                     <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" /></div>
                                 </div>
