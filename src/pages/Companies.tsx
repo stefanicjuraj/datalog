@@ -8,6 +8,7 @@ import linkedin from '../assets/icons/linkedin-dark.svg';
 import career from '../assets/icons/career-dark.svg';
 import loading from '../assets/icons/loading.svg';
 import chevronUp from '../assets/icons/chevron-up-light.svg';
+import chevronUpDark from '../assets/icons/chevron-up-dark.svg';
 import chevronDown from '../assets/icons/chevron-down-light.svg';
 
 interface Company {
@@ -223,6 +224,10 @@ function Companies() {
                             </Link>
                         </div>
                     </div>
+                    {/* back to top button */}
+                    <a href="#" id="back-to-top" className="w-10 h-10 mr-3 mb-3 text-black bg-gray-100 rounded-lg flex justify-center items-center fixed bottom-0 right-0 z-10">
+                        <img src={chevronUpDark} className="h-6 w-6" alt="back to top" />
+                    </a>
                     {/* table div */}
                     <div className="max-w-screen-2xl mt-8 mb-40 sm:px-4 px-0 mx-auto relative overflow-x-auto">
                         {/* table */}
