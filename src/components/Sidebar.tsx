@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import favicon from "../../public/favicon-dark.svg";
-import menu from "../assets/icons/menu.svg";
+import favicon from "../../public/favicon-light.svg";
+import menu from "../assets/icons/menu-light.svg";
 import chevron from "../assets/icons/chevron-right.svg";
 import company from "../assets/icons/company-dark.svg";
 import conference from "../assets/icons/conference-dark.svg";
@@ -84,12 +84,12 @@ const Sidebar: React.FC = () => {
     return (
         <div>
             {/* navbar */}
-            <nav className="fixed top-0 z-50 w-full bg-[#F9FAFB] border-b border-gray-100">
+            <nav className="fixed top-0 z-50 w-full bg-[#222] border-b border-gray-100">
                 <div className="px-3 py-3 lg:px-5 lg:pl-3">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center justify-start">
                             {/* navbar toggle menu */}
-                            <a aria-controls="logo-sidebar" type="button" onClick={toggleSidebar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 cursor-pointer">
+                            <a aria-controls="logo-sidebar" type="button" onClick={toggleSidebar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-[#333] focus:outline-none focus:ring-2 focus:ring-[#333] cursor-pointer">
                                 <img src={menu} className="h-6 w-6" alt="menu" />
                             </a>
                             {/* favicon */}
@@ -103,8 +103,8 @@ const Sidebar: React.FC = () => {
                         <div className="flex items-center mr-3">
                             {/* <img src={github} className="mr-3 h-7 w-7" alt="github" /> */}
                             <div>
-                                <p className="text-md text-black">Last updated:</p>
-                                <p className="text-md text-black">{date}</p>
+                                <p className="text-md text-white">Last updated:</p>
+                                <p className="text-md text-white">{date}</p>
                             </div>
                         </div>
                     </div>
