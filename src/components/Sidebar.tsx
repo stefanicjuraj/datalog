@@ -111,7 +111,7 @@ const Sidebar: React.FC = () => {
                 </div>
             </nav>
             {/* sidebar */}
-            <aside id="logo-sidebar" className={`transition-transform left-0 top-0 -translate-x-full fixed top-0 left-0 z-40 w-56 h-screen pt-36 transition-transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} bg-[#F9FAFB] border-r border-gray-100 sm:translate-x-0`} aria-label="Sidebar">
+            <aside id="logo-sidebar" className={`transition-transform left-0 top-0 -translate-x-full fixed top-0 left-0 z-40 w-56 h-screen pt-36 transition-transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} bg-[#F9FAFB] border-r border-[#EEE] sm:translate-x-0`} aria-label="Sidebar">
                 <div className="h-full px-3 pb-4 overflow-y-auto bg-[#F9FAFB]">
                     <ul className="space-y-3 font-medium">
                         <li>
