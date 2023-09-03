@@ -20,7 +20,7 @@ function Contribute() {
                             Contribute
                         </h1>
                         {/* header tags */}
-                        <div className="flex text-white mt-2">
+                        <div className="flex text-white mt-4">
                             <a className="rounded-full text-md text-center inline-flex items-center">
                                 <span className="flex items-center text-normal">
                                     {/* header animation */}
