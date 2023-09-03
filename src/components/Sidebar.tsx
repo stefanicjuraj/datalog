@@ -84,7 +84,7 @@ const Sidebar: React.FC = () => {
     return (
         <div>
             {/* navbar */}
-            <nav className="fixed top-0 z-50 w-full bg-[#222] border-b border-gray-100">
+            <nav className="fixed top-0 z-50 w-full bg-[#222] shadow-sm shadow-black">
                 <div className="px-3 py-3 lg:px-5 lg:pl-3">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center justify-start">
