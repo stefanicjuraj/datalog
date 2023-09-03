@@ -10,8 +10,8 @@ import education from "../assets/icons/education-dark.svg";
 import certificate from "../assets/icons/certificate-dark.svg";
 import analytics from "../assets/icons/analytics-dark.svg";
 import contribute from "../assets/icons/heart-dark.svg";
-import github from "../assets/icons/github-dark.svg";
-import linkedin from "../assets/icons/linkedin-dark.svg";
+// import github from "../assets/icons/github-dark.svg";
+// import linkedin from "../assets/icons/linkedin-dark.svg";
 
 const Sidebar: React.FC = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -196,15 +196,15 @@ const Sidebar: React.FC = () => {
                 {/* sidebar footer */}
                 <div className="absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full flex bg-[#F9FAFB] z-20">
                     {/* github */}
-                    <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
+                    {/* <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100"> */}
                         {/* github icon */}
-                        <img src={github} className="ml-1 h-6 w-6" alt="github" />
-                    </a>
+                        {/* <img src={github} className="ml-1 h-6 w-6" alt="github" /> */}
+                    {/* </a> */}
                     {/* linkedin */}
-                    <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
+                    {/* <a href="#" className="inline-flex justify-center p-2 text-black rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100"> */}
                         {/* linkedin icon */}
-                        <img src={linkedin} className="ml-1 h-6 w-6" alt="linkedin" />
-                    </a>
+                        {/* <img src={linkedin} className="ml-1 h-6 w-6" alt="linkedin" /> */}
+                    {/* </a> */}
                 </div>
             </aside>
         </div>
