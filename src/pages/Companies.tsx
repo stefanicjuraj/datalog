@@ -86,7 +86,7 @@ function Companies() {
     // fetch data
     useEffect(() => {
         setIsLoading(true);
-        fetch("../datadummy/companies.json")
+        fetch("")
             .then((response) => response.json())
             .then((jsonDataResponse) => {
                 setJsonData(jsonDataResponse);
