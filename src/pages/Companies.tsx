@@ -46,21 +46,21 @@ function CompaniesTable({ company }: { company: Company }) {
             </td>
             {/* contact */}
             <td className="sm:pl-4 pl-8">
-                <a href={company["Contact"]} className="px-4 py-3 mr-0 mb-2 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                <a href={company["Contact"]} className="px-4 py-3 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* contact icon */}
                     <img src={contact} className="h-7 w-7" alt="contact" />
                 </a>
             </td>
             {/* careers */}
             <td className="sm:pl-4 pl-8">
-                <a href={company["LinkedIn"]} className="px-4 py-3 mr-0 mb-2 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                <a href={company["LinkedIn"]} className="px-4 py-3 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* careers */}
                     <img src={linkedin} className="h-7 w-7" alt="career" />
                 </a>
             </td>
             {/* careers */}
             <td className="sm:pl-4 pl-8">
-                <a href={company["Career"]} className="px-4 py-3 mr-0 mb-2 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                <a href={company["Career"]} className="px-4 py-3 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* career icon */}
                     <img src={career} className="h-7 w-7" alt="careers" />
                 </a>
