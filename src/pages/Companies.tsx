@@ -259,7 +259,7 @@ function Companies() {
                                     </th>
                                     {/* employees */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap rounded-r-xl">
-                                        <h1>Employees #</h1>
+                                        <h1>Employees</h1>
                                     </th>
                                 </tr>
                             </thead>
