@@ -8,6 +8,10 @@ body {
   -moz-user-select: none;
 }
 
+.num {
+  font-family: "Verdana", serif;
+}
+
 /* animation */
 .animation {
   animation-duration: 0.5s;
