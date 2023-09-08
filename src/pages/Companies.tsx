@@ -168,10 +168,10 @@ function Companies() {
     }
 
     return (
-        <div className="p-4 pt-12 sm:ml-56">
+        <div className="pl-4 pr-4 pt-12">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
                 <div className="relative overflow-x-auto mb-40 rounded-lg">
-                    <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-2xl">
+                    <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-xl">
                         {/* header */}
                         <div className="mb-4 sm:p-16 p-8 bg-[#222] rounded-3xl text-left shadow-sm shadow-black">
                             {/* header title */}
@@ -206,7 +206,7 @@ function Companies() {
                         </div>
                     </div>
                     {/* search & contribute div */}
-                    <div className="flex flex-col items-center max-w-screen-2xl sm:px-4 px-0 mx-auto mt-8 mb-4 sm:flex-row sm:justify-between">
+                    <div className="flex flex-col items-center max-w-screen-xl sm:px-4 px-0 mx-auto mt-8 mb-4 sm:flex-row sm:justify-between">
                         {/* search form */}
                         <form className="flex items-center animation glow delay-1">
                             <div className="relative sm:w-96 w-80">
@@ -239,7 +239,7 @@ function Companies() {
                         <img src={chevronUpDark} className="h-6 w-6" alt="back to top" />
                     </a>
                     {/* table div */}
-                    <div className="max-w-screen-2xl mt-8 mb-40 sm:px-4 px-0 mx-auto relative overflow-x-auto">
+                    <div className="max-w-screen-xl mt-8 mb-40 sm:px-4 px-0 mx-auto relative overflow-x-auto">
                         {/* table */}
                         <table className="mt-0 text-left w-full mx-auto">
                             {/* table header */}
