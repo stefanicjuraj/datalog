@@ -10,6 +10,7 @@ import loading from '../assets/icons/loading.svg';
 import chevronUp from '../assets/icons/chevron-up-light.svg';
 import chevronUpDark from '../assets/icons/chevron-up-dark.svg';
 import chevronDown from '../assets/icons/chevron-down-light.svg';
+import services from '../assets/icons/code.svg';
 
 interface Company {
     "Company": string;
@@ -44,6 +45,13 @@ function CompaniesTable({ company }: { company: Company }) {
                         {industry}
                     </a>
                 ))}
+            </td>
+            {/* services */}
+            <td className="sm:pl-5 pl-8">
+                <a href={company["Services"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                    {/* services icon */}
+                    <img src={services} className="h-7 w-7" alt="services" />
+                </a>
             </td>
             {/* contact */}
             <td className="sm:pl-4 pl-8">
@@ -245,6 +253,10 @@ function Companies() {
                                     {/* industry & services */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
                                         <h1>Industry & Department</h1>
+                                    </th>
+                                    {/* services */}
+                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
+                                        <h1>Services</h1>
                                     </th>
                                     {/* contact */}
                                     <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
