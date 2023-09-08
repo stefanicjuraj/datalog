@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import pin from '../assets/icons/pin.svg';
 import search from '../assets/icons/search.svg';
 import contact from '../assets/icons/contact-dark.svg';
-import linkedin from '../assets/icons/linkedin-dark.svg';
+import linkedin from '../assets/icons/linkedin.svg';
 import career from '../assets/icons/career-dark.svg';
 import loading from '../assets/icons/loading.svg';
 import chevronUp from '../assets/icons/chevron-up-light.svg';
