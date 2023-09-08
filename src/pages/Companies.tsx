@@ -244,7 +244,7 @@ function Companies() {
                                     </th>
                                     {/* industry & services */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
-                                        <h1>Industry & Services</h1>
+                                        <h1>Industry & Department</h1>
                                     </th>
                                     {/* contact */}
                                     <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
