@@ -15,7 +15,7 @@ interface Company {
     "Company": string;
     "Website": string;
     "Industry": string[];
-    "Work": string;
+    "Services": string;
     "Contact": string;
     "Careers": string;
     "LinkedIn": string;
