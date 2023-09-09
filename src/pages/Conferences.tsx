@@ -98,7 +98,7 @@ function Conferences() {
             .finally(() => setIsLoading(false));
     }, []);
 
-    // filter data by company name
+    // filter data by conference name
     const filterData = (searchTerm: string) => {
         const filteredData = jsonData.filter((conference) =>
             conference["Conference"].toLowerCase().includes(searchTerm.toLowerCase())
