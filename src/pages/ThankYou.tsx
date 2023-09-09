@@ -3,7 +3,7 @@ import arrow from '../assets/icons/arrow-dark.svg';
 
 function ThankYou() {
     return (
-        <div className="p-4 pt-12 sm:ml-56 animation">
+        <div className="pl-4 pr-4 pt-12 animation">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
                 <div className="relative overflow-x-auto mb-40 rounded-lg">
                     <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-2xl">
