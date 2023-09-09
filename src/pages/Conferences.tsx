@@ -121,7 +121,7 @@ function Conferences() {
         sortData();
     }, [sortOrder]);
 
-    // sort by company column
+    // sort by conference column
     const handleSort = () => {
         setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     };
