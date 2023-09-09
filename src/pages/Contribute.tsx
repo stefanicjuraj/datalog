@@ -75,7 +75,7 @@ function Contribute() {
                             </div>
                         </div>
                         {/* form div */}
-                        <div className="max-w-screen-lg mx-auto mt-16 mb-4 sm:p-12 p-8 bg-[#222] rounded-xl">
+                        <div className="max-w-screen-md mx-auto mt-16 mb-4 sm:p-12 p-8 bg-[#222] rounded-xl">
                             {/* form section */}
                             <section id="form">
                                 {/* form */}
