@@ -2,10 +2,10 @@ import pin from '../assets/icons/pin.svg';
 
 function DataOverview() {
     return (
-        <div className="p-4 pt-12 sm:ml-56">
+        <div className="pl-4 pr-4 pt-12">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
                 <div className="relative overflow-x-auto mb-40 rounded-lg">
-                    <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-2xl">
+                    <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-xl">
                         {/* header */}
                         <div className="mb-4 sm:p-16 p-8 bg-[#222] rounded-3xl text-left shadow-sm shadow-black">
                             {/* header title */}
