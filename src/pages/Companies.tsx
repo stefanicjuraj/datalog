@@ -160,7 +160,7 @@ function Companies() {
     function NoResultsMessage() {
         return (
             <tr>
-                <td colSpan={6} className="text-center py-16 text-black">
+                <td colSpan={7} className="text-center py-16 text-black">
                     No results found.
                 </td>
             </tr>
