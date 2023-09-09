@@ -12,7 +12,7 @@ function About() {
     const [disclaimerOpen, setDisclaimerOpen] = useState(true);
 
     return (
-        <div className="pl-4 pr-4 pt-12 mb-32 sm:ml-56">
+        <div className="pl-4 pr-4 pt-12 mb-32">
             <div className="max-w-screen-xl xl:max-w-screen-2xl mx-auto">
                 <div className="mt-24 sm:px-4 px-0 mx-auto max-w-screen-xl">
                     {/* header */}
