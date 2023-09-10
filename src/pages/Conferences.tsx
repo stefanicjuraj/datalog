@@ -95,7 +95,7 @@ function Conferences() {
     // fetch data
     useEffect(() => {
         setIsLoading(true);
-        fetch("")
+        fetch("../data/conferences.json")
             .then((response) => response.json())
             .then((jsonDataResponse) => {
                 setJsonData(jsonDataResponse);

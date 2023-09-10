@@ -61,7 +61,7 @@ function Certificates() {
     // fetch data
     useEffect(() => {
         setIsLoading(true);
-        fetch("")
+        fetch("../data/certificates.json")
             .then((response) => response.json())
             .then((jsonDataResponse) => {
                 setJsonData(jsonDataResponse);

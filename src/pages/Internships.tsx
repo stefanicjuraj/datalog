@@ -65,7 +65,7 @@ function Internships() {
     // fetch data
     useEffect(() => {
         setIsLoading(true);
-        fetch("")
+        fetch("../data/internships.json")
             .then((response) => response.json())
             .then((jsonDataResponse) => {
                 setJsonData(jsonDataResponse);

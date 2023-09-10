@@ -102,7 +102,7 @@ function Companies() {
     // fetch data
     useEffect(() => {
         setIsLoading(true);
-        fetch("")
+        fetch("../data/companies.json")
             .then((response) => response.json())
             .then((jsonDataResponse) => {
                 setJsonData(jsonDataResponse);

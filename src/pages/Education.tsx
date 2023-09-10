@@ -61,7 +61,7 @@ function Education() {
     // fetch data
     useEffect(() => {
         setIsLoading(true);
-        fetch("")
+        fetch("../data/education.json")
             .then((response) => response.json())
             .then((jsonDataResponse) => {
                 setJsonData(jsonDataResponse);
