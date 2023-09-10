@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Countdown from '../components/Countdown';
 // import icons
 import pin from '../assets/icons/pin.svg';
 import search from '../assets/icons/search.svg';
@@ -65,6 +66,12 @@ function ConferencesTable({ conference }: { conference: Conference }) {
                     {conference["Start date"]}
                     <br />
                     {conference["End date"]}
+                </p>
+            </td>
+            {/* countdown */}
+            <td className="sm:pl-6 pl-8">
+                <p className="inline-flex items-center">
+                    <Countdown startDate={conference["Start date"]} />
                 </p>
             </td>
             {/* ticket */}
@@ -254,6 +261,10 @@ function Conferences() {
                                     {/* date */}
                                     <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
                                         <h1>Start / End date</h1>
+                                    </th>
+                                    {/* countdown */}
+                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
+                                        <h1>Countdown</h1>
                                     </th>
                                     {/* tickets */}
                                     <th className="sm:px-3 px-6 py-3 whitespace-nowrap rounded-r-xl">
