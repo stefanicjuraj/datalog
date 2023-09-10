@@ -77,7 +77,7 @@ function CompaniesTable({ company }: { company: Company }) {
             {/* employees */}
             <td className="pl-4">
                 <a className="px-4 py-3 mr-0 mb-2 text-black text-md text-center font-md rounded-xl inline-flex items-center truncate" target="_blank" rel="noopener noreferrer">
-                    {/* linkedin icon */}
+                    {/* employees data */}
                     {company["Employees"]}
                 </a>
             </td>
