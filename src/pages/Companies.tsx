@@ -75,15 +75,15 @@ function CompaniesTable({ company }: { company: Company }) {
                 </a>
             </td>
             {/* employees */}
-            <td className="pl-4">
-                <a className="px-4 py-3 mr-0 mb-2 text-black text-md text-center font-md rounded-xl inline-flex items-center truncate" target="_blank" rel="noopener noreferrer">
+            <td className="sm:pl-4 pl-6">
+                <a className="px-4 py-3 text-black text-md text-center font-md rounded-xl inline-flex items-center truncate" target="_blank" rel="noopener noreferrer">
                     {/* employees data */}
                     {company["Employees"]}
                 </a>
             </td>
             {/* location */}
             <td className="sm:pl-0 pl-6">
-                <p className="text-black text-md text-center font-md rounded-xl inline-flex items-center truncate">
+                <p className="inline-flex items-center">
                     {/* location data */}
                     {company["Location"]}
                 </p>
