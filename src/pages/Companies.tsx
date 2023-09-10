@@ -75,7 +75,7 @@ function CompaniesTable({ company }: { company: Company }) {
                 </a>
             </td>
             {/* employees */}
-            <td className="sm:pl-4 pl-6">
+            <td className="sm:pl-3 pl-8">
                 <a className="px-4 py-3 text-black text-md text-center font-md rounded-xl inline-flex items-center truncate" target="_blank" rel="noopener noreferrer">
                     {/* employees data */}
                     {company["Employees"]}
