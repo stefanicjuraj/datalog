@@ -81,6 +81,13 @@ function CompaniesTable({ company }: { company: Company }) {
                     {company["Employees"]}
                 </a>
             </td>
+            {/* location */}
+            <td className="sm:pl-0 pl-6">
+                <p className="text-black text-md text-center font-md rounded-xl inline-flex items-center truncate">
+                    {/* location data */}
+                    {company["Location"]}
+                </p>
+            </td>
         </tr>
     );
 }
@@ -271,8 +278,12 @@ function Companies() {
                                         <h1>Careers</h1>
                                     </th>
                                     {/* employees */}
-                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap rounded-r-xl">
+                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
                                         <h1>Employees</h1>
+                                    </th>
+                                    {/* location */}
+                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap rounded-r-xl">
+                                        <h1>Location</h1>
                                     </th>
                                 </tr>
                             </thead>
