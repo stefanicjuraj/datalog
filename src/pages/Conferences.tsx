@@ -160,7 +160,7 @@ function Conferences() {
     function NoResultsMessage() {
         return (
             <tr>
-                <td colSpan={6} className="text-center py-16 text-black">
+                <td colSpan={7} className="text-center py-16 text-black">
                     No results found.
                 </td>
             </tr>
@@ -277,7 +277,7 @@ function Conferences() {
                                 {/* loading */}
                                 {isLoading ? (
                                     <tr>
-                                        <td colSpan={6} className="text-center py-16">
+                                        <td colSpan={7} className="text-center py-16">
                                             <div className="flex items-center justify-center">
                                                 {/*  loading spinner icon */}
                                                 <img src={loading} className="h-10 w-10 animate-spin" alt="loading" />
