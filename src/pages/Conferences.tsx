@@ -75,7 +75,7 @@ function ConferencesTable({ conference }: { conference: Conference }) {
                 </p>
             </td>
             {/* ticket */}
-            <td className="sm:pl-4 pl-6">
+            <td className="sm:pl-8 pl-6">
                 <a href={conference["Ticket"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* ticket icon */}
                     <img src={ticket} className="h-7 w-7" alt="ticket" />
@@ -267,7 +267,7 @@ function Conferences() {
                                         <h1>Countdown</h1>
                                     </th>
                                     {/* tickets */}
-                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap rounded-r-xl">
+                                    <th className="sm:px-6 px-6 py-3 whitespace-nowrap rounded-r-xl">
                                         <h1>Ticket</h1>
                                     </th>
                                 </tr>
