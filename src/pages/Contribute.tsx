@@ -64,9 +64,6 @@ function Contribute() {
                             <p className="pt-4 pb-4">
                                 We value your input and encourage you to share your expertise by suggesting new additions, updates, and providing valuable feedback. This collaborative effort ensures that the directory remains a dynamic and up-to-date source of information, benefiting both professionals and beginners in the field.
                             </p>
-                            <p className="pt-4 pb-4">
-                                Contributions are available via two methods — by submitting a form, or <a href="" className="underline">opening an issue on the GitHub repository</a>. Both methods are equally valid, and will be reviewed and processed.
-                            </p>
                             <div className="text-center mt-16">
                                 <a className="inline-flex items-center justify-center px-8 py-4 text-lg text-center bg-[#222] text-white rounded">
                                     Submit a contribution
