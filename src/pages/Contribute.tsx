@@ -61,7 +61,7 @@ function Contribute() {
                             <h1 className="pt-4 pb-4 font-bold">
                                 Thank you for your interest in contributing!
                             </h1>
-                            <p className="pt-4 pb-4">
+                            <p className="pt-4">
                                 We value your input and encourage you to share your expertise by suggesting new additions, updates, and providing valuable feedback. This collaborative effort ensures that the directory remains a dynamic and up-to-date source of information, benefiting both professionals and beginners in the field.
                             </p>
                             <div className="text-center mt-16">
