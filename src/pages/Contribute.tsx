@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
 // import icons
-import github from '../assets/icons/github-light.svg';
 import readme from '../assets/icons/readme.svg';
 import heart from '../assets/icons/heart.svg';
 import user from '../assets/icons/user.svg';
