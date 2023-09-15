@@ -44,7 +44,7 @@ function Contribute() {
                             {/* form */}
                             <a href="#form" className="inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                 <img src={readme} className="h-6 w-6 mr-1" alt="readme" />
-                                Submit a form
+                                Submit a contribution
                             </a>
                         </div>
                     </div>
