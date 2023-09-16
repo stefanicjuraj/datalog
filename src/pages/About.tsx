@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import icons
-import github from '../assets/icons/github-light.svg';
 import readme from '../assets/icons/readme.svg';
 import info from '../assets/icons/info.svg';
 import vercel from '../assets/icons/vercel.svg';
@@ -42,16 +41,9 @@ function About() {
                         </div>
                         {/* header tags */}
                         <div className="flex mt-4">
-                            {/* github */}
-                            <Link to="">
-                                <a className="inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                                    <img src={github} className="h-6 w-6 mr-1" alt="github" />
-                                    GitHub
-                                </a>
-                            </Link>
                             {/* readme */}
                             <Link to="">
-                                <a className="ml-3 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
+                                <a className="inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                     <img src={readme} className="h-6 w-6 mr-1" alt="readme" />
                                     ReadMe
                                 </a>
