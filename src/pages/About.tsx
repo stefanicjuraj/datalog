@@ -36,7 +36,7 @@ function About() {
                             </a>
                             <a className="text-white text-md text-center inline-flex items-center">
                                 Deployed on
-                                <img src={vercel} className="h-5 w-5 ml-1 mr-1" alt="vercel" />
+                                <img src={vercel} className="h-5 w-5 ml-1 mr-1" alt="vercel icon" />
                             </a>
                         </div>
                         {/* header tags */}
@@ -44,7 +44,7 @@ function About() {
                             {/* readme */}
                             <Link to="">
                                 <a className="inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                                    <img src={readme} className="h-6 w-6 mr-1" alt="readme" />
+                                    <img src={readme} className="h-6 w-6 mr-1" alt="readme icon" />
                                     ReadMe
                                 </a>
                             </Link>
@@ -61,7 +61,7 @@ function About() {
                                 <div id="disclaimer" className="mt-4 mb-4 sm:p-8 p-6 border border-gray-200 shadow-sm rounded-xl bg-[#F9FAFB]" role="alert">
                                     <div className="flex items-center">
                                         {/* disclaimer icon */}
-                                        <img src={info} className="h-6 w-6 mr-2" alt="disclaimer" />
+                                        <img src={info} className="h-6 w-6 mr-2" alt="disclaimer icon" />
                                         {/* disclaimer header */}
                                         <h3 className="text-2xl font-bold text-black">
                                             Disclaimer
@@ -76,7 +76,7 @@ function About() {
                                     </div>
                                     <div className="flex">
                                         <button onClick={() => setDisclaimerOpen(false)} type="button" data-dismiss-target="#disclaimer" aria-label="Close" className="ml-2 inline-flex items-center justify-center px-5 py-3 sm:text-md text-sm font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-[#F9FAFB]">
-                                            <img src={check} className="h-4 w-4" alt="check" />
+                                            <img src={check} className="h-4 w-4" alt="check icon" />
                                         </button>
                                     </div>
                                 </div>

@@ -48,7 +48,7 @@ function InternshipsTable({ internship }: { internship: Internship }) {
             <td className="sm:pl-4 pl-6">
                 <a href={internship["Apply"]} className="px-4 py-3 mr-0 mb-2 text-gray-500 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* ticket icon */}
-                    <img src={apply} className="h-7 w-7" alt="ticket" />
+                    <img src={apply} className="h-7 w-7" alt="ticket icon" />
                 </a>
             </td>
         </tr>
@@ -181,7 +181,7 @@ function Internships() {
                             <div className="relative sm:w-96 w-80">
                                 <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
                                     {/* search icon */}
-                                    <img src={search} className="h-4 w-4" alt="Search Icon" />
+                                    <img src={search} className="h-4 w-4" alt="search icon" />
                                 </div>
                                 {/* search input */}
                                 <input value={searchTerm} onChange={handleSearchInputChange} type="email" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by internship" />
@@ -213,7 +213,7 @@ function Internships() {
                                     {/* internship */}
                                     <th onClick={handleSort} className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
                                         <h1 className="inline-flex">Internships</h1>
-                                        {sortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="Up Arrow" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow" />}
+                                        {sortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow up" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow down" />}
                                     </th>
                                     {/* industry & departments */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
@@ -237,7 +237,7 @@ function Internships() {
                                         <td colSpan={4} className="text-center py-16">
                                             <div className="flex items-center justify-center">
                                                 {/*  loading spinner icon */}
-                                                <img src={loading} className="h-10 w-10 animate-spin" alt="loading" />
+                                                <img src={loading} className="h-10 w-10 animate-spin" alt="loading icon" />
                                             </div>
                                         </td>
                                     </tr>

@@ -29,7 +29,7 @@ function PageNotFound() {
                         <Link to="/">
                             <a className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                 Return to home page
-                                <img src={arrow} className="h-6 w-6 ml-2" alt="arrow" />
+                                <img src={arrow} className="h-6 w-6 ml-2" alt="arrow icon" />
                             </a>
                         </Link>
                     </div>

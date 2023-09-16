@@ -50,28 +50,28 @@ function CompaniesTable({ company }: { company: Company }) {
             <td className="sm:pl-5 pl-8">
                 <a href={company["Services"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* services icon */}
-                    <img src={services} className="h-7 w-7" alt="services" />
+                    <img src={services} className="h-7 w-7" alt="services icon" />
                 </a>
             </td>
             {/* contact */}
             <td className="sm:pl-4 pl-8">
                 <a href={company["Contact"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* contact icon */}
-                    <img src={contact} className="h-7 w-7" alt="contact" />
+                    <img src={contact} className="h-7 w-7" alt="contact icon" />
                 </a>
             </td>
             {/* careers */}
             <td className="sm:pl-4 pl-8">
                 <a href={company["LinkedIn"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* careers */}
-                    <img src={linkedin} className="h-7 w-7" alt="career" />
+                    <img src={linkedin} className="h-7 w-7" alt="career icon" />
                 </a>
             </td>
             {/* careers */}
             <td className="sm:pl-4 pl-8">
                 <a href={company["Career"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* career icon */}
-                    <img src={career} className="h-7 w-7" alt="careers" />
+                    <img src={career} className="h-7 w-7" alt="careers icon" />
                 </a>
             </td>
             {/* employees */}
@@ -220,7 +220,7 @@ function Companies() {
                             <div className="relative sm:w-96 w-80">
                                 <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
                                     {/* search icon */}
-                                    <img src={search} className="h-4 w-4" alt="Search Icon" />
+                                    <img src={search} className="h-4 w-4" alt="search icon" />
                                 </div>
                                 {/* search input */}
                                 <input value={searchTerm} onChange={handleSearchInputChange} type="email" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by company" />
@@ -244,7 +244,7 @@ function Companies() {
                     </div>
                     {/* back to top button */}
                     <a href="#" id="back-to-top" className="w-10 h-10 mr-3 mb-3 text-black bg-gray-100 rounded-lg flex justify-center items-center fixed bottom-0 right-0 z-10">
-                        <img src={chevronUpDark} className="h-6 w-6" alt="back to top" />
+                        <img src={chevronUpDark} className="h-6 w-6" alt="back to top icon" />
                     </a>
                     {/* table div */}
                     <div className="max-w-screen-xl mt-8 mb-40 sm:px-4 px-0 mx-auto relative overflow-x-auto">
@@ -256,7 +256,7 @@ function Companies() {
                                     {/* company */}
                                     <th onClick={handleSort} className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
                                         <h1 className="inline-flex">Company</h1>
-                                        {sortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="Up Arrow" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow" />}
+                                        {sortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow up" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow down" />}
                                     </th>
                                     {/* industry & services */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
@@ -296,7 +296,7 @@ function Companies() {
                                         <td colSpan={8} className="text-center py-16">
                                             <div className="flex items-center justify-center">
                                                 {/*  loading spinner icon */}
-                                                <img src={loading} className="h-10 w-10 animate-spin" alt="loading" />
+                                                <img src={loading} className="h-10 w-10 animate-spin" alt="loading icon" />
                                             </div>
                                         </td>
                                     </tr>

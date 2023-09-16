@@ -41,7 +41,7 @@ function Contribute() {
                         <div className="flex mt-4">
                             {/* form */}
                             <a href="#form" className="inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#222] text-white rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
-                                <img src={readme} className="h-6 w-6 mr-1" alt="readme" />
+                                <img src={readme} className="h-6 w-6 mr-1" alt="readme icon" />
                                 Submit a contribution
                             </a>
                         </div>
@@ -58,7 +58,7 @@ function Contribute() {
                             <div className="text-center mt-16">
                                 <a className="inline-flex items-center justify-center px-8 py-4 text-lg text-center bg-[#222] text-white rounded">
                                     Submit a contribution
-                                    <img src={arrowDown} className="h-6 w-6 ml-2" alt="arrow" />
+                                    <img src={arrowDown} className="h-6 w-6 ml-2" alt="arrow icon" />
                                 </a>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ function Contribute() {
                                             </label>
                                             <div className="flex">
                                                 <span className="inline-flex items-center px-3 border border-r-0 border-gray-300 rounded-l-md">
-                                                    <img src={user} className="h-4 w-4" alt="user" />
+                                                    <img src={user} className="h-4 w-4" alt="user icon" />
                                                 </span>
                                                 {/* input name */}
                                                 <input type="text" name="name" id="name" className="rounded-none rounded-r-lg bg-[#F9FAFB] border border-[#F9FAFB] text-black focus:ring-[#333] focus:ring-1 focus:border-[#333] block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="John Doe" />
@@ -91,7 +91,7 @@ function Contribute() {
                                             </label>
                                             <div className="flex">
                                                 <span className="inline-flex items-center px-3 border border-r-0 border-gray-300 rounded-l-md">
-                                                    <img src={mail} className="h-4 w-4" alt="mail" />
+                                                    <img src={mail} className="h-4 w-4" alt="mail icon" />
                                                 </span>
                                                 {/* input email */}
                                                 <input type="email" name="email" id="email" className="rounded-none rounded-r-lg bg-[#F9FAFB] border border-gray-300 text-gray-900 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="john.doe@gmail.com" />
@@ -108,7 +108,7 @@ function Contribute() {
                                     {/* submit */}
                                     <button type="submit" className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-gray-200 text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                         Submit
-                                        <img src={arrowDark} className="h-6 w-6 ml-2" alt="arrow" />
+                                        <img src={arrowDark} className="h-6 w-6 ml-2" alt="arrow icon" />
                                     </button>
                                     {/* input hidden */}
                                     <input type="hidden" name="redirect" value=""></input>

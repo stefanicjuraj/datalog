@@ -35,7 +35,7 @@ function Home() {
                                 </span>
                             </p>
                             <h1 className="text-white text-md text-center inline-flex items-center">
-                                <img src={pin} className="h-5 w-5 mr-1" alt="location" />
+                                <img src={pin} className="h-5 w-5 mr-1" alt="location icon" />
                                 Croatia
                             </h1>
                         </div>
@@ -54,7 +54,7 @@ function Home() {
                         <Link to="/about">
                             <h1 className="mt-8 inline-flex items-center justify-center px-5 py-3 sm:text-lg text-md font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-white border hover:underline hover:shadow-sm hover:shadow-white">
                                 Read more
-                                <img src={arrow} className="h-6 w-6 ml-2" alt="read more" />
+                                <img src={arrow} className="h-6 w-6 ml-2" alt="read more icon" />
                             </h1>
                         </Link>
                         {/* contribute */}
@@ -70,7 +70,7 @@ function Home() {
                         <Link to="/companies">
                             <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-2">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
-                                    <img src={company} className="h-6 w-6" alt="companies" />
+                                    <img src={company} className="h-6 w-6" alt="companies icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold">
                                     <span className="text-2xl">540+ {" "}</span>
@@ -88,7 +88,7 @@ function Home() {
                         <Link to="/conferences">
                             <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-3">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
-                                    <img src={conference} className="h-6 w-6" alt="conferences" />
+                                    <img src={conference} className="h-6 w-6" alt="conferences icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold">
                                     <span className="text-2xl">10+ {" "}</span>
@@ -98,7 +98,7 @@ function Home() {
                                     Attend conferences and presentations with industry knowledge professionals and enthusiasts.
                                 </h1>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow icon" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -106,7 +106,7 @@ function Home() {
                         <Link to="/internships">
                             <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-4">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
-                                    <img src={internship} className="h-6 w-6" alt="internships" />
+                                    <img src={internship} className="h-6 w-6" alt="internships icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>   Internships</h1>
                                 <h1 className="mb-2">
@@ -121,14 +121,14 @@ function Home() {
                         <Link to="/education">
                             <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-5">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
-                                    <img src={education} className="h-6 w-6" alt="education" />
+                                    <img src={education} className="h-6 w-6" alt="education icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">20+</span>  Education courses</h1>
                                 <h1 className="mb-2">
                                     Enrol into provided courses, lectures, and classes to learn more about IT and software development.
                                 </h1>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow icon" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -136,14 +136,14 @@ function Home() {
                         <Link to="/certificates">
                             <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-6">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
-                                    <img src={certificate} className="h-6 w-6" alt="certificates" />
+                                    <img src={certificate} className="h-6 w-6" alt="certificates icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span>  Certificates</h1>
                                 <h1 className="mb-2">
                                     Search for the certifications to master and demonstrate your professional knowledge and skills.
                                 </h1>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow icon" /></div>
                                 </div>
                             </div>
                         </Link>
@@ -151,14 +151,14 @@ function Home() {
                         <Link to="/analytics">
                             <div className="mb-8 px-8 py-4 rounded-xl bg-gray-100 shadow-sm hover:shadow-inner hover:shadow-gray-300 animation glow delay-7">
                                 <div className="flex justify-center items-center mt-4 mb-4 w-10 h-10 rounded-full bg-gray-800 lg:h-12 lg:w-12">
-                                    <img src={analytics} className="h-6 w-6" alt="analytics" />
+                                    <img src={analytics} className="h-6 w-6" alt="analytics icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold"><span className="text-2xl">10+</span> Analytics & Insights </h1>
                                 <h1 className="mb-2">
                                     Observe and gain insight into the industry trends, statistics, and data to amplify your decision-making.
                                 </h1>
                                 <div className="flex flex-row-reverse">
-                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow" /></div>
+                                    <div className="px-1 py-1"><img src={arrowCorner} className="h-7 w-7" alt="arrow icon" /></div>
                                 </div>
                             </div>
                         </Link>
