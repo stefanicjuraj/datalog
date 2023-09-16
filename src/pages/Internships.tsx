@@ -208,7 +208,7 @@ function Internships() {
                         {/* table */}
                         <table className="mt-0 text-left w-full mx-auto">
                             {/* table header */}
-                            <thead className="text-xl text-white animation glow delay-2">
+                            <thead className="text-lg text-white animation glow delay-2">
                                 <tr className="bg-[#222]">
                                     {/* internship */}
                                     <th onClick={handleSort} className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
