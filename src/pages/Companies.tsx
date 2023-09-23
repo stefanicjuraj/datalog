@@ -58,18 +58,18 @@ function CompaniesTable({ company }: { company: Company }) {
                     <img src={contact} className="h-7 w-7" alt="contact icon" />
                 </a>
             </td> */}
-            {/* careers */}
+            {/* linkedin */}
             <td className="sm:pl-4 pl-8">
                 <a href={company["LinkedIn"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
-                    {/* careers */}
-                    <img src={linkedin} className="h-7 w-7" alt="career icon" />
+                    {/* linkedin data */}
+                    <img src={linkedin} className="h-7 w-7" alt="linkedin icon" />
                 </a>
             </td>
-            {/* careers */}
+            {/* jobs */}
             <td className="sm:pl-4 pl-8">
                 <a href={company["Jobs"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
-                    {/* career icon */}
-                    <img src={career} className="h-7 w-7" alt="careers icon" />
+                    {/* jobs icon */}
+                    <img src={career} className="h-7 w-7" alt="jobs icon" />
                 </a>
             </td>
             {/* employees */}
