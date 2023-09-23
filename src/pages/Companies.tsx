@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 // import icons
 import pin from '../assets/icons/pin.svg';
 import search from '../assets/icons/search.svg';
-import contact from '../assets/icons/contact-dark.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import career from '../assets/icons/career-dark.svg';
 import loading from '../assets/icons/loading.svg';
 import chevronUp from '../assets/icons/chevron-up-light.svg';
 import chevronUpDark from '../assets/icons/chevron-up-dark.svg';
 import chevronDown from '../assets/icons/chevron-down-light.svg';
-import services from '../assets/icons/code.svg';
+// import contact from '../assets/icons/contact-dark.svg';
+// import services from '../assets/icons/code.svg';
 
 interface Company {
     "Company": string;
@@ -47,19 +47,17 @@ function CompaniesTable({ company }: { company: Company }) {
                 ))}
             </td>
             {/* services */}
-            <td className="sm:pl-5 pl-8">
+            {/* <td className="sm:pl-5 pl-8">
                 <a href={company["Services"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
-                    {/* services icon */}
                     <img src={services} className="h-7 w-7" alt="services icon" />
                 </a>
-            </td>
+            </td> */}
             {/* contact */}
-            <td className="sm:pl-4 pl-8">
+            {/* <td className="sm:pl-4 pl-8">
                 <a href={company["Contact"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
-                    {/* contact icon */}
                     <img src={contact} className="h-7 w-7" alt="contact icon" />
                 </a>
-            </td>
+            </td> */}
             {/* careers */}
             <td className="sm:pl-4 pl-8">
                 <a href={company["LinkedIn"]} className="px-3.5 py-2.5 mr-0 mb-2 bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
@@ -282,13 +280,13 @@ function Companies() {
                                         <h1>Industry & Department</h1>
                                     </th>
                                     {/* services */}
-                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
+                                    {/* <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
                                         <h1>Services</h1>
-                                    </th>
+                                    </th> */}
                                     {/* contact */}
-                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
+                                    {/* <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
                                         <h1>Contact</h1>
-                                    </th>
+                                    </th> */}
                                     {/* linkedin */}
                                     <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
                                         <h1>LinkedIn</h1>
