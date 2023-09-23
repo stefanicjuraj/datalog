@@ -243,7 +243,7 @@ function Companies() {
                                     <img src={search} className="h-4 w-4" alt="search icon" />
                                 </div>
                                 {/* search input */}
-                                <input value={searchTerm} onChange={handleSearchInputChange} type="email" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by company" />
+                                <input value={searchTerm} onChange={handleSearchInputChange} type="text" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by company" />
                                 <p id="searchResults" className="text-black absolute right-2 bottom-2 bg-[#eee] focus:ring-4 focus:outline-none rounded-xl text-base px-5 py-2">
                                     {/* search filtered data - results count */}
                                     {filteredData.length} results
