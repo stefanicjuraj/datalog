@@ -9,6 +9,7 @@ import loading from '../assets/icons/loading.svg';
 import chevronUp from '../assets/icons/chevron-up-light.svg';
 import chevronUpDark from '../assets/icons/chevron-up-dark.svg';
 import chevronDown from '../assets/icons/chevron-down-light.svg';
+import location from '../assets/icons/pin-dark.svg';
 // import contact from '../assets/icons/contact-dark.svg';
 // import services from '../assets/icons/code.svg';
 
@@ -82,10 +83,12 @@ function CompaniesTable({ company }: { company: Company }) {
             </td>
             {/* location */}
             <td className="sm:pl-0 pl-6">
-                <p className="inline-flex items-center">
+                <a className="inline-flex items-center" rel="noopener noreferrer">
+                    {/* location icon */}
+                    <img src={location} className="h-6 w-6 mr-1" alt="location icon" />
                     {/* location data */}
                     {company["Location"]}
-                </p>
+                </a>
             </td>
         </tr>
     );
