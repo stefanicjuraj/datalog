@@ -99,6 +99,7 @@ function Companies() {
     const [searchTerm, setSearchTerm] = useState<string>("");
     const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
     const [isLoading, setIsLoading] = useState(true);
+    const [employeeSortOrder, setEmployeeSortOrder] = useState<"asc" | "desc">("asc");
 
     // fetch data
     useEffect(() => {
@@ -139,6 +140,24 @@ function Companies() {
     // sort by company column
     const handleSort = () => {
         setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+    };
+
+    // sort employees data
+    const sortEmployeesData = () => {
+        const sortedData = [...filteredData].sort((a, b) => {
+            const aValue = parseInt(a["Employees"]);
+            const bValue = parseInt(b["Employees"]);
+            return employeeSortOrder === "asc" ? aValue - bValue : bValue - aValue;
+        });
+        setFilteredData(sortedData);
+    };
+
+    useEffect(() => {
+        sortEmployeesData();
+    }, [employeeSortOrder]);
+
+    const handleEmployeeSort = () => {
+        setEmployeeSortOrder(employeeSortOrder === "asc" ? "desc" : "asc");
     };
 
     // search input
@@ -279,8 +298,9 @@ function Companies() {
                                         <h1>Careers</h1>
                                     </th>
                                     {/* employees */}
-                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
-                                        <h1>Employees</h1>
+                                    <th onClick={handleEmployeeSort} className="sm:px-0 px-6 py-3 whitespace-nowrap cursor-pointer">
+                                        <h1 className="inline-flex">Employees</h1>
+                                        {employeeSortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow up" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow down" />}
                                     </th>
                                     {/* location */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap rounded-r-xl">
