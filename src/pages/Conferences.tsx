@@ -91,6 +91,7 @@ function Conferences() {
     const [searchTerm, setSearchTerm] = useState<string>("");
     const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
     const [isLoading, setIsLoading] = useState(true);
+    const [countdownSortOrder, setCountdownSortOrder] = useState<"asc" | "desc">("asc");
 
     // fetch data
     useEffect(() => {
@@ -132,6 +133,24 @@ function Conferences() {
     const handleSort = () => {
         setSortOrder(sortOrder === "asc" ? "desc" : "asc");
     };
+
+    // sort countdown data values
+    const sortDataByCountdown = () => {
+        const sortedData = [...filteredData].sort((a, b) => {
+            const aValue = new Date(a["Start date"]).getTime();
+            const bValue = new Date(b["Start date"]).getTime();
+            return countdownSortOrder === "asc" ? aValue - bValue : bValue - aValue;
+        });
+        setFilteredData(sortedData);
+    };
+
+    const handleCountdownSort = () => {
+        setCountdownSortOrder(countdownSortOrder === "asc" ? "desc" : "asc");
+    };
+
+    useEffect(() => {
+        sortDataByCountdown();
+    }, [countdownSortOrder]);
 
     // search input
     const tableRef = useRef<HTMLTableElement>(null);
@@ -263,8 +282,9 @@ function Conferences() {
                                         <h1>Start / End date</h1>
                                     </th>
                                     {/* countdown */}
-                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap">
-                                        <h1>Countdown</h1>
+                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap cursor-pointer" onClick={handleCountdownSort}>
+                                        <h1 className="inline-flex">Countdown</h1>
+                                        {countdownSortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow up" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow down" />}
                                     </th>
                                     {/* tickets */}
                                     <th className="sm:px-6 px-6 py-3 whitespace-nowrap rounded-r-xl">
