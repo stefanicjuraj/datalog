@@ -22,6 +22,7 @@ const Countdown: React.FC<CountdownProps> = ({ startDate }) => {
 
     return (
         <p className="px-2.5 py-1.5 text-sm text-black font-bold bg-[#eee] rounded-full text-center items-center">
+            <p className="mr-1 w-2 h-2 animate-pulse bg-green-500 inline-flex rounded-full flex-shrink-0"></p>
             {daysLeft !== null ? (
                 daysLeft === -1 ? (
                     '-'
