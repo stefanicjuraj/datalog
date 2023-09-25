@@ -73,7 +73,7 @@ function Home() {
                                     <img src={company} className="h-6 w-6" alt="companies icon" />
                                 </div>
                                 <h1 className="mb-4 text-xl font-bold">
-                                    <span className="text-2xl">540+ {" "}</span>
+                                    <span className="text-2xl">550+ {" "}</span>
                                     Companies
                                 </h1>
                                 <h1 className="mb-2">
