@@ -199,7 +199,7 @@ function Education() {
                             {/* contribute text prompt */}
                             <Link to="/contribute" className="sm:text-lg text-md sm:mt-0 mt-4 animation glow delay-1">
                                 <h1 className="mr-3 sm:text-lg text-md text-[#AAA] hover:text-black whitespace-nowrap">
-                                    Can't find your favorite education?{' '}
+                                    Can't find your favorite course?{' '}
                                     <span className="underline sm:text-lg text-md">
                                         Suggest it!
                                     </span>
