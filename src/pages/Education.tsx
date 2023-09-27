@@ -10,6 +10,7 @@ import apply from '../assets/icons/apply.svg';
 
 interface Education {
     "Course": string;
+    "Type": string;
     "Website": string;
     "Topic": string[];
     "Organizer": string;
@@ -23,6 +24,13 @@ function EducationTable({ education }: { education: Education }) {
             <th scope="row" className="pl-6 py-8 text-xl text-black font-bold whitespace-nowrap">
                 {education["Course"]}
             </th>
+            {/* type */}
+            <td className="sm:pl-2 pl-8">
+                <h1 className="mr-0 mb-2 text-black text-md text-left inline-flex items-center" rel="noopener noreferrer">
+                    {/* type data */}
+                    {education["Type"]}
+                </h1>
+            </td>
             {/* topic */}
             <td className="sm:pl-0 pl-6">
                 {education["Topic"] && education["Topic"].map((topic, index) => (
@@ -210,6 +218,10 @@ function Education() {
                                     <th onClick={handleSort} className="sm:px-6 px-6 py-7 whitespace-nowrap cursor-pointer rounded-l-xl">
                                         <h1 className="inline-flex">Course</h1>
                                         {sortOrder === "asc" ? <img src={chevronUp} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow up" /> : <img src={chevronDown} className="h-5 w-5 ml-1 inline-flex" alt="sort arrow down" />}
+                                    </th>
+                                    {/* topics & departments */}
+                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
+                                        <h1>Completion Type</h1>
                                     </th>
                                     {/* topics & departments */}
                                     <th className="sm:px-0 px-6 py-3 whitespace-nowrap">
