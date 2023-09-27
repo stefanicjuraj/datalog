@@ -21,7 +21,7 @@ function EducationTable({ education }: { education: Education }) {
     return (
         <tr className="bg-[#FFF] hover:bg-[#fff] border-b">
             {/* education course */}
-            <th scope="row" className="pl-6 py-8 text-xl text-black font-bold whitespace-nowrap">
+            <th scope="row" className="pl-6 py-8 text-lg text-black font-bold whitespace-nowrap">
                 {education["Course"]}
             </th>
             {/* type */}
