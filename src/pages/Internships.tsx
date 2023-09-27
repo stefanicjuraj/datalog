@@ -18,7 +18,7 @@ interface Internship {
 
 function InternshipsTable({ internship }: { internship: Internship }) {
     return (
-        <tr className="bg-[#FFF] hover:bg-[#fff] border-b">
+        <tr className="bg-[#FFF] hover:bg-[#F9F9F9] border-b">
             {/* internship */}
             <th scope="row" className="pl-6 py-5 text-xl text-black font-bold whitespace-nowrap">
                 {internship["Internship"]}

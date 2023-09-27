@@ -24,7 +24,7 @@ interface Conference {
 
 function ConferencesTable({ conference }: { conference: Conference }) {
     return (
-        <tr className="bg-[#FFF] hover:bg-[#fff] border-b">
+        <tr className="bg-[#FFF] hover:bg-[#F9F9F9] border-b">
             {/* conference */}
             <th scope="row" className="pl-6 py-5 text-lg text-black font-bold whitespace-nowrap">
                 {conference["Conference"]}

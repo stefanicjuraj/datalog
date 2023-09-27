@@ -19,7 +19,7 @@ interface Certificate {
 
 function CertificateTable({ certificate }: { certificate: Certificate }) {
     return (
-        <tr className="bg-[#FFF] hover:bg-[#fff] border-b">
+        <tr className="bg-[#FFF] hover:bg-[#F9F9F9] border-b">
             {/* education course */}
             <th scope="row" className="pl-6 py-8 text-xl text-black font-bold whitespace-nowrap">
                 {certificate["Certificate"]}

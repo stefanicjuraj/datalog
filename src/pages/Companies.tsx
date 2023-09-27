@@ -28,7 +28,7 @@ interface Company {
 
 function CompaniesTable({ company }: { company: Company }) {
     return (
-        <tr className="bg-[#FFF] hover:bg-[#fff] border-b">
+        <tr className="bg-[#FFF] hover:bg-[#F9F9F9] border-b">
             {/* company */}
             <th scope="row" className="pl-6 py-5 text-lg text-black font-bold whitespace-nowrap">
                 {company["Company"]}
