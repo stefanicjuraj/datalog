@@ -48,7 +48,7 @@ function EducationTable({ education }: { education: Education }) {
                 </a>
             </td>
             {/* enroll */}
-            <td className="sm:pl-2 pl-5">
+            <td className="sm:pl-0 pl-5 pr-5">
                 <a href={education["Enroll"]} className="px-4 py-3 mr-0 mb-2 text-gray-500 text-md text-center bg-[#eee] hover:ring-1 hover:shadow-sm hover:ring-[#eee] focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-xl inline-flex items-center" target="_blank" rel="noopener noreferrer">
                     {/* enroll data */}
                     <img src={apply} className="h-7 w-7" alt="enroll icon" />
@@ -232,7 +232,7 @@ function Education() {
                                         <h1>Organizer</h1>
                                     </th>
                                     {/* apply */}
-                                    <th className="sm:px-3 px-6 py-3 whitespace-nowrap rounded-r-xl">
+                                    <th className="sm:px-0 px-6 py-3 whitespace-nowrap rounded-r-xl">
                                         <h1>Enroll</h1>
                                     </th>
                                 </tr>
