@@ -16,6 +16,7 @@ import Contribute from "./pages/Contribute";
 import ThankYou from "./pages/ThankYou";
 import DataOverview from "./pages/DataOverview";
 import TermsOfUse from "./pages/TermsOfUse";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/thankyou" element={<ThankYou />} />
                 <Route path="/data" element={<DataOverview />} />
                 <Route path="/terms-of-use" element={<TermsOfUse />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
         </Router >
     );
