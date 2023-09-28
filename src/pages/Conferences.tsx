@@ -45,7 +45,7 @@ function ConferencesTable({ conference }: { conference: Conference }) {
             </td>
             {/* organizer */}
             <td className="sm:pl-0 pl-4">
-                <a href={conference["Contact"]} className="px-4 py-3 mr-0 mb-2 text-black text-md text-left bg-white hover:ring-1 hover:shadow-sm hover:ring-[#eee] focus:ring-2 focus:outline-none font-bold rounded-xl inline-flex items-center underline" target="_blank" rel="noopener noreferrer">
+                <a href={conference["Contact"]} className="px-4 py-3 mr-0 mb-2 text-black text-md text-left hover:ring-1 hover:shadow-sm hover:ring-[#eee] focus:ring-2 focus:outline-none font-bold rounded-xl inline-flex items-center underline" target="_blank" rel="noopener noreferrer">
                     {/* organizer data */}
                     {conference["Organizer"]}
                 </a>
