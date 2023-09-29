@@ -78,6 +78,12 @@ function About() {
                                         <button onClick={() => setDisclaimerOpen(false)} type="button" data-dismiss-target="#disclaimer" aria-label="Close" className="ml-2 inline-flex items-center justify-center px-5 py-3 sm:text-md text-sm font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-[#F9FAFB]">
                                             <img src={check} className="h-4 w-4" alt="check icon" />
                                         </button>
+                                        {/* policy */}
+                                        <Link to="/policy">
+                                            <button type="button" data-dismiss-target="#disclaimer" aria-label="Close" className="ml-2 inline-flex items-center justify-center px-5 py-3 sm:text-md text-sm font-medium text-center bg-[#F9FAFB] text-black rounded-lg focus:ring-1 focus:ring-white border-black border hover:underline hover:shadow-sm hover:shadow-[#F9FAFB]">
+                                                View Policy
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             )}
