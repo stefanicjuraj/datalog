@@ -15,7 +15,7 @@ import Certificates from "./pages/Certificates";
 import Contribute from "./pages/Contribute";
 import ThankYou from "./pages/ThankYou";
 import DataOverview from "./pages/DataOverview";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Policy from "./pages/Policy";
 
 function App() {
     return (
@@ -34,7 +34,7 @@ function App() {
                 <Route path="/contribute" element={<Contribute />} />
                 <Route path="/thankyou" element={<ThankYou />} />
                 <Route path="/data" element={<DataOverview />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/policy" element={<Policy />} />
             </Routes>
         </Router >
     );
