@@ -13,15 +13,14 @@ interface Certificate {
     "Website": string;
     "Topic": string[];
     "Organizer": string;
-    "Contact": string;
     "Enroll": string;
 }
 
 function CertificateTable({ certificate }: { certificate: Certificate }) {
     return (
         <tr className="bg-[#FFF] hover:bg-[#F9F9F9] border-b">
-            {/* education course */}
-            <th scope="row" className="pl-6 py-8 text-xl text-black font-bold whitespace-nowrap">
+            {/* certificate course */}
+            <th scope="row" className="pl-6 py-8 text-lg text-black font-bold whitespace-nowrap">
                 {certificate["Certificate"]}
             </th>
             {/* topic */}
@@ -35,7 +34,7 @@ function CertificateTable({ certificate }: { certificate: Certificate }) {
             </td>
             {/* organizer */}
             <td className="sm:pl-2 pl-5">
-                <a href={certificate["Contact"]} className="px-4 py-3 mr-0 mb-2 text-black text-md text-left bg-white hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-bold rounded-xl inline-flex items-center underline" target="_blank" rel="noopener noreferrer">
+                <a href={certificate["Website"]} className="px-4 py-3 mr-0 mb-2 text-black text-md text-left bg-white hover:ring-1 hover:shadow-sm hover:ring-gray-200 focus:ring-2 focus:outline-none focus:ring-gray-200 font-bold rounded-xl inline-flex items-center underline" target="_blank" rel="noopener noreferrer">
                     {/* organizer icon */}
                     {certificate["Organizer"]}
                 </a>
@@ -184,7 +183,7 @@ function Certificates() {
                                 <input value={searchTerm} onChange={handleSearchInputChange} type="text" id="searchInput" className="block w-full p-4 pl-10 text-base text-black border border-gray-300 rounded-2xl focus:ring-black focus:border-black" placeholder="Search by certificates" />
                                 <p id="searchResults" className="text-black absolute right-2 bottom-2 bg-[#eee] focus:ring-4 focus:outline-none rounded-xl text-base px-5 py-2">
                                     {/* search filtered data - results count */}
-                                    results
+                                    {filteredData.length} results
                                 </p>
                             </div>
                         </form>
